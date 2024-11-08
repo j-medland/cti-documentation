@@ -1,0 +1,3 @@
+= Manuel de Cours
+
+IMPORTANT: {wip}

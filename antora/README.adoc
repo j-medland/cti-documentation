@@ -1,0 +1,3 @@
+= docs
+
+The Antora playbook project (i.e., site manifest) for the Wovalab open-source projects documentation site.

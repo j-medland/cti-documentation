@@ -1,0 +1,3 @@
+* xref:index.adoc[Set-up Instructions]
+* xref:course-manual.adoc[Course Manual]
+* xref:labview-instrument-emulator.adoc[LabVIEW Instrument Emulator]

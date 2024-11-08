@@ -1,0 +1,8 @@
+name: cti-doc_fr
+title: LabVIEW training
+version: ~
+nav:
+  - modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    wip: Cette page est en cours d'écriture

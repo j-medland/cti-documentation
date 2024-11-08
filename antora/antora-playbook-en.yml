@@ -1,0 +1,31 @@
+site:
+  title: CTI documentation
+  # the 404 page and sitemap files only get generated when the url property is set
+  url: https://labviewcommunitytraining.github.io/
+  start_page: cti-doc_en::index.adoc
+  robots: allow
+antora:
+  extensions:
+  - require: '@antora/lunr-extension'
+urls:
+  latest_version_segment: latest
+  latest_version_segment_strategy: redirect:to
+content:
+  sources:
+  - url: ./../
+  #- url: /Users/olivierjourdan/Documents/git-repositories/cti/cti-documentation
+    #branches: main
+    start_paths: cti-doc_en
+  
+asciidoc:
+  attributes:
+    experimental: ''
+    idprefix: ''
+    idseparator: '-'
+    page-pagination: ''
+    # shortcut
+    lv: LabVIEW(TM)
+ui:
+  bundle:
+    url: ./../user-interface/ui-bundle.zip
+    snapshot: true
