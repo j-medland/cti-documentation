@@ -31,4 +31,5 @@ ui:
     contents: |
       static_files:
       - .nojekyll
+      - favicon.ico
   - path: .nojekyll
