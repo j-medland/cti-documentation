@@ -3,13 +3,6 @@
     <div class="navbar-brand">
       <a class="navbar-item logo" title="Cti" href="https://github.com/LabVIEWCommunityTraining"><img src="{{{uiRootPath}}}/img/cti.png" alt="LabVIEWComunityTraining" width="64"></a>
       <a class="navbar-item" href="{{{or site.url siteRootPath}}}">{{site.title}}</a>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="#"><span></span>English</a>
-          <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://labviewcommunitytraining.github.io/cti-documentation/en/index.html">English</a>
-          <a class="navbar-item" href="https://labviewcommunitytraining.github.io/cti-documentation/fr/index.html">Français</a>
-          </div>
-        </div>
       {{#if env.SITE_SEARCH_PROVIDER}}
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
@@ -19,6 +12,13 @@
           </label>
         </div>
       </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#"><span></span>English</a>
+          <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://labviewcommunitytraining.github.io/cti-documentation/en/index.html">English</a>
+          <a class="navbar-item" href="https://labviewcommunitytraining.github.io/cti-documentation/fr/index.html">Français</a>
+          </div>
+        </div>
       {{/if}}
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
