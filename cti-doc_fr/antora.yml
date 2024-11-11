@@ -1,5 +1,5 @@
 name: cti-doc_fr
-title: LabVIEW training
+title: Formation {lv}
 version: ~
 nav:
   - modules/ROOT/nav.adoc
