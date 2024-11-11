@@ -3,7 +3,7 @@
   --color-white: #fff;
   --color-smoke-10: #fefefe;
   --color-smoke-30: #fafafa;
-  --color-smoke-50: #ffc658;
+  --color-smoke-50: #f5f5f5;
   --color-smoke-70: #f0f0f0;
   --color-smoke-90: #e1e1e1;
   --color-gray-10: #c1c1c1;
@@ -46,7 +46,7 @@
   --navbar-menu-border-color: var(--panel-border-color);
   --navbar-menu-background: var(--color-black);
   --navbar-menu-font-color: var(--color-white);
-  --navbar-menu_hover-background: var(--color-smoke-50);
+  --navbar-menu_hover-background: var(--color-jet-80);
   /* nav */
   --nav-background: var(--panel-background);
   --nav-border-color: var(--color-gray-10);
