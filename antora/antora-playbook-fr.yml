@@ -25,7 +25,7 @@ asciidoc:
     lv: LabVIEW(TM)
 ui:
   bundle:
-    url: ./../user-interface/ui-bundle.zip
+    url: ./../user-interface/build/ui-bundle.zip
   supplemental_files:
   - path: ui.yml
     contents: |
