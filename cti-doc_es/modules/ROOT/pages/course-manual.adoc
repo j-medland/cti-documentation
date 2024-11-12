@@ -1,4 +1,4 @@
-= Curso Manual
+= Manual del Curso
 
 == Configurando el sistema
 
