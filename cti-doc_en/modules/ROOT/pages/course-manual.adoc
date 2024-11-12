@@ -1,3 +1,709 @@
 = Course Manual
 
 IMPORTANT: {wip}
+
+
+
+== Setting up the System
+
+See../GettingStartedLabVIEW1-English/2) Tutor Instructions/Tutor
+Instructions 1.odt
+
+* If you are using the Emulator, load it by navigating to
+/root/Desktop/GettingStartedLabVIEW1-English-main/3) LabVIEW Instrument
+Emulator/builds/HandsOn/CTIPicoVISAEmulator/
+* Right-click in the window and select Open Terminal Here
+
+image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espanish/assets/5545396/9edd704c-c81b-4c34-a92f-416af763ec48[image]
+
+* Type in./CTIPicoVISAEmulator.exe
+
+image:Pictures/100000000000033100000232AEED086AC2D5D2B0.png[image,width=385,height=90]
+
+* The emulator will ask you to select a subnet.
+
+image:Pictures/100000000000051E00000366063B2EEA23AE7CB2.png[image,width=94,height=157]image:Pictures/1000000000000532000003648524A07E62A3ED3D.png[image,width=613,height=399]
+
+* It will then sit waiting for a connection. “Connecting” will be
+displayed in status bar.
+
+== 
+
+== [#anchor-1]##*Lesson 1* – LabVIEW “Hello World” LED On/Off
+
+=== [#anchor-2]####Optional: Setting up the Hardware 
+
+If you have the hardware for this course then you will need to set up
+and wire it as shown in the image
+below.image:Pictures/10000201000003930000030165C94B1D606E5457.png[image,width=588,height=495]
+If not skip to *Lesson Instructions*.
+
+image:Pictures/10000000000004FB000002CDE0C3A99980ABFA3B.png[image,width=395,height=276]
+
+=== [#anchor-3]####Lesson Instructions
+
+The LabVIEW version of a “Hello World” program is to make a piece of
+hardware do something basic, usually it is turning an LED On and Off.
+
+Load LabVIEW and select a New VI.
+
+image:Pictures/100000000000036700000243000AC9CEC77DEE46.png[image,width=462,height=307]
+
+Setup the screen like this:
+
+image:Pictures/100000000000072B0000039E3CAD2D3874009E4F.png[image,width=602,height=304]
+
+In LabVIEW a VI is a Virtual Instrument is equivalent to a function or
+module in other languages. A LabVIEW program is made up of 1 or more
+VIs.
+
+* In the block diagram right-click and navigate to the HandsOnPi2040
+Driver Palette.
+
+image:Pictures/1000020100000524000003B778FEA9D131DB7A2A.png[image,width=582,height=421]
+
+* 
+* image:Pictures/100000000000033A000001C861119305A83046D7.png[image,width=551,height=304]Drag
+and drop Initialize.vi, WriteDO.vi and Close.vi onto the block diagram
+as shown below.
+
+_Notice that the Run-arrow is broken (the run arrow appears in the top
+left corner), if you press it, it will list all the reasons why it’s
+broken_.
+
+image:Pictures/10000000000001EB000001975DA530E39D30242F.png[image,width=490,height=406]
+
+* LabVIEW will not let you run the source-code until these errors are
+sorted. Close the Error List and select all of the Vis. (Left-click drag
+on mouse).
+
+* Press Ctrl+space to bring up quick drop and Ctrl+W to wire the VIs
+together. Quick drop is an extremely useful productivity tool that ships
+with LabVIEW. It allows you to automate repetitive tasks with a few key
+combos.
+
+image:Pictures/10000000000000CD0000004283D225DF9AC718C0.png[image,width=205,height=65]
+
+If you press the Run arrow now you will notice that there are only 2
+issues listed, good job!
+
+* Press Ctrl-H to bring up the context help window. Hover over
+Initialize.vi.
++
+
+image:Pictures/1000000000000183000001040C9A888F8F206406.png[image,width=323,height=217]
+
+_Notice that VISA resource name is *bold*. This means that it needs to
+have an input._
+
+* Now, right-click on VISA Resource Name Initialize.vi and select create
+constant.
+
+If you press the Run arrow now you will notice that there is only 1
+issue left.
+
+image:Pictures/1000000000000174000000E2B513B59FB4D0F5AB.png[image,width=371,height=226]
+
+This VI needs it’s Output and DO Value (True) wiring. So let’s create
+constants for them. Use the arrow on the right to select an output.
+
+image:Pictures/1000000000000103000000B083C68EBE97FE6341.png[image,width=259,height=176]
+
+image:Pictures/10000201000000A50000007C627BA86CD5BD2783.png[image,width=165,height=124]It’s
+nice to have the constant label shown for booleans.
+
+* Right click on the ‘True’ Boolean Constant. This will bring up a drop
+down window, hover over ‘Visible Items’ and select ‘Label’.
+
+image:Pictures/10000201000001790000012FD6937A64CB17F604.png[image,width=293,height=236]
+
+Constants are terminals on the block diagram that supply fixed data
+values to the diagram. We’ll discuss data types etc. later in the
+session.
+
+* Finally let’s wire in a couple of outputs.
+
+image:Pictures/100000000000015000000117CAC9EE8F055265EF.png[image,width=335,height=278]
+
+* Right-click on IDN for Initialize.vi and select ‘Create Indicator’.
+Then we need an error out, so right click at the bottom the Close.vi and
+select ‘Create Indicator’.
+
+image:Pictures/1000000000000337000001C88E979705867B61C2.png[image,width=641,height=355]
+
+Notice how the Indicators appear on the Front Panel. We’ll discuss
+block-diagrams and front panels in a bit.
+
+Now we have a running program!
+
+However, you will notice the we’ll have an error.
+
+image:Pictures/1000000000000337000001CAF795C47AA666140B.png[image,width=653,height=362]
+
+* 
+* We can interrogate the error message to try and get a clue as to why
+it all went so wrong. Sometimes it can even be helpful.
+
+image:Pictures/10000000000001A5000000CDF1085F0DF09FEADE.png[image,width=420,height=205]
+
+In this case it is!
+
+image:Pictures/10000000000002680000015CDA2FA29652DEA5C0.png[image,width=425,height=240]
+
+* The VIs don’t know who they are talking to. To fix this, hardware
+users need to set the correct VISA reference from the ‘VISA’ drop down
+box.. For Emulator users click the ‘Copy’ button, as seen in the image
+below and paste the reference in, if you have hardware refresh and
+select the ASRL reference.
+
+image:Pictures/1000020100000554000002B640463AF720808239.png[image,width=680,height=346]
+
+* Now press run again.
+
+Here we can see that no errors were apparent and Identity has a value.
+
+image:Pictures/1000000000000337000001C8E8EF315CAA8C6E04.png[image,width=500,height=278]
+
+But more importantly
+image:Pictures/100000000000027D0000015B2F1D44B2D356D15C.png[image,width=431,height=235]the
+LED on the hardware has turned on.
+
+== [#anchor-4]##**Lesson 2 – **For Loops
+
+=== [#anchor-5]####Optional: Setting up the Hardware
+
+image:Pictures/10000201000003930000030165C94B1D606E5457.png[image,width=605,height=509]Wire
+your hardware like the image
+below.image:Pictures/10000000000004FB000002CDE0C3A99980ABFA3B.png[image,width=395,height=276]
+
+=== [#anchor-6]####Lesson Instructions
+
+A For Loop executes a sub-diagram a set number of times. In this case
+you will learn how to build a program that will blink the previous LED
+on and off 10 times each and then stop.
+
+* Make your workspace bigger to allow space for adding objects. Use Ctrl
+then drag to expand.
+
+image:Pictures/1000020100000243000001212AC94671CAFB36A5.png[image,width=353,height=170]
+
+image:Pictures/10000201000001EC000000EE628EBD663E5BC167.png[image,width=325,height=160]
+
+* 
+* Alternatively select the objects you need to move with the selection
+tool and drag them where you want with the mouse, or using the arrows.
+
+Note: press Shift and an arrow key to move selected items quicker.
+
+* Now insert a For Loop, to do this right click anywhere on the block
+diagram to bring up the functions palette. Select ‘Structures’ then ‘For
+Loop’.
+
+image:Pictures/100000000000036600000231B3B329720B17BF74.png[image,width=484,height=312]
+
+* You will only need to place the For Loop around the WriteDO SubVI (and
+the constants attached to it.)
+
+* Once the For Loop has been placed, you will see an ‘N’ in the top left
+corner, this is the loop count (or how many times the loop will
+execute.)
+
+* Right click on the left hand side of the Loop Count, and select
+‘Create a Constant’. For this task you will need the Loop Count to be 20
+(10 times on and 10 times off.)
+
+image:Pictures/1000020100000366000002318134A4FE0313E790.png[image,width=476,height=307]
+
+In order for the program to ‘blink’ successfully it will need to know
+what the previous loop has executed, therefore you will need a Shift
+Register.
+
+* Right click on the edge of the For Loop and select ‘Add Shift
+Register.’ Wire the True Constant to the Shift Registers and the DO
+(Value) wire terminal.
+
+image:Pictures/100002010000035F000001EE91868BA72B7DD1C1.png[image,width=306,height=196]image:Pictures/10000201000001930000012F23E1CE4C390CBE57.png[image,width=265,height=199]
+
+If you were to run the program at this point the LED would light up, but
+would not ‘blink.’
+
+* For a blinking LED you will need to invert the boolean value after
+every loop. To do this right click anywhere to bring up the functions
+palette. Hover over ‘Boolean’ then select the ‘Not’ Boolean. Wire this
+into the shift registers.
+
+image:Pictures/10000201000003630000023DB067792B7A2B90E2.png[image,width=556,height=358]image:Pictures/1000000000000146000000FDDA7B7C4A86F83447.png[image,width=325,height=240]
+
+The program will now work! However, it will execute very fast, and you
+will not be able to see the LED blinking. So you need to slow the Loop
+down.
+
+* Right click inside the For Loop, hover over ‘Timing.’ There will see
+many different timing options. For this you will use the ‘Wait’
+function. Select and place inside the Loop.
+
+* Create a constant by right clicking on the left side of the ‘Wait’
+function. The ‘Wait’ function executes in milliseconds, therefore to
+slow down the Loop by 5 seconds, write 500.
+
+image:Pictures/100002010000050F0000037EA5D1685E99168628.png[image,width=591,height=341]
+
+* Now Run the program. You have successfully used a For Loop to blink
+the Digital Output.
+
+== [#anchor-7]####Lesson 3 – While Loops
+
+=== [#anchor-8]####Optional: Setting up the Hardware
+
+Wire your hardware like the image below.
+
+image:Pictures/10000201000003930000030165C94B1D606E5457.png[image,width=621,height=522]image:Pictures/10000000000004FB000002CDE0C3A99980ABFA3B.png[image,width=395,height=276]
+
+=== [#anchor-9]####Lesson Instructions
+
+The While Loop executes the sub-diagram until a specific condition
+occurs. It will always execute at least one time.
+
+In this case, you want the LED to continually blink on and off until a
+‘Stop’ button is pressed. You can create this using the previously built
+program with the For Loop.
+
+* Firstly, right click on the edge of the For Loop, and select ‘Replace
+with While Loop’
+
+image:Pictures/1000020100000373000001DA9663B30AE37D4232.png[image,width=506,height=274]
+
+* Now the For Loop has been replaced, the Loop Count is not connected.
+This is not needed for a While Loop and can be deleted.
+
+image:Pictures/10000201000003120000011B0AACC49326D2A5D6.png[image,width=521,height=183]
+
+* To add a ‘Stop’ boolean, switch to the front panel window and right
+click where you want to place the button. The Controls palette will
+appear, select ‘Boolean’ and pick a button. The example uses a ‘Push
+Button’ but any will work.
+
+image:Pictures/1000020100000343000002C2BF5FD62D9AD7E1A0.png[image,width=518,height=438]
+
+* Back on the Block Diagram move the new Control Boolean into the While
+Loop and wire it up to the Conditional Terminal in the bottom right
+corner. If the Button on the Front Panel is pressed when the program is
+running then the Loop will end and the ‘blinking’ LED will stop.
+
+=== image:Pictures/100002010000030F0000011DBD1553AEB7E8DDAC.png[image,width=532,height=191]
+
+=== [#anchor-10]####Exercise – Use DI to stop the loop
+
+Hint: wiring diagram for DI
+
+image:Pictures/100000000000035C000002D1886CE271F1F69336.png[image,width=531,height=445]Hint:
+VI for DI
+
+image:Pictures/10000000000001E5000001FEC03D5F2539F5B79D.png[image,width=106,height=112]
+
+== [#anchor-11]####Lesson 4 – Event Structure
+
+=== [#anchor-12]####Optional: Setting up the Hardware
+
+Wire your hardware like the image below.
+
+image:Pictures/10000201000003930000030165C94B1D606E5457.png[image,width=613,height=515]image:Pictures/10000000000004FB000002CDE0C3A99980ABFA3B.png[image,width=395,height=276]
+
+=== [#anchor-13]####Lesson Instructions
+
+An Event Structure waits until a certain event occurs, then executes the
+appropriate case to handle that event. In this example, we want to press
+a buttons and the corresponding light to turn on.
+
+* First lets delete the while loop and its contents. Click on the While
+Loop and press the delete key. Do the same for the ‘True’ constant. Then
+remove the broken wires with Ctrl+B.
+
+image:Pictures/1000020100000292000001348324DDBAFF93D6D3.png[image,width=618,height=236]
+
+image:Pictures/10000000000002CC000000E3D1CE16936C10ED2C.png[image,width=602,height=106]
+
+* Right click to bring up the Functions Palette, hover over ‘Structures’
+then select ‘Event Structure.’ Place the Event Structure on the Block
+Diagram.
+
+image:Pictures/1000020100000338000002821B30F14B83268F0D.png[image,width=618,height=481]
+
+* Wire the Initialize VI and the Close VI through the Event Structure.
+* image:Pictures/10000201000002FF00000156A3856844627E9BEA.png[image,width=480,height=214]Add
+a new Event Case by right clicking on the Selector Label, and select
+‘Add Event Case.’
+* image:Pictures/100002010000033B000001F981CF6DE115363DBF.png[image,width=316,height=279]image:Pictures/10000201000005D70000039FB2949CC317CC2DD3.png[image,width=528,height=366]Add
+the WriteDO.vi by bringing up the Functions Palette, hover over
+‘Instrument I/O’, ‘Instr Drivers,’ ‘HandsOnPi2040,’ and select
+‘WriteDO.vi.
+* Drag the sub VI inside the Event Structure and wire it up. Right click
+the Output terminal and create a Constant.
+* image:Pictures/100002010000016C0000012D62B1799FC65FBB0F.png[image,width=316,height=261]Change
+the Output from ‘No DO – Error’ to ‘DO1’ by clicking the drop down arrow
+on the Output Constant.
+
+image:Pictures/100002010000014D0000012705BB693656EF26D0.png[image,width=297,height=263]
+
+* Next we need to add a button for the Digital Output. Go to the Front
+Panel, and right click anywhere to bring up the Controls Palette. Hover
+over ‘Boolean,’ and select ‘Push Button’
+* image:Pictures/10000201000002DB000002CF3F5733874B7CC9FC.png[image,width=531,height=505]image:Pictures/100002010000014E0000012B7BF40CC1B6F19E27.png[image,width=334,height=299]Wire
+the new Boolean Control into the ‘DO Value’ terminal.
+* Right click on the Label Selector as we need to ‘Edit Events Handled
+by This Case.’
+* image:Pictures/10000201000001660000013C2ED62B0536FBFF8C.png[image,width=358,height=316]This
+will bring up the ‘Edit Events’ window. Select ‘Boolean.’
+
+image:Pictures/100002010000030C0000026080F4C7F0BE99289C.png[image,width=618,height=482]
+
+* This Event Case is now complete. We will need 3 more Event Cases, each
+one corresponding to a LED. The easiest way to do this is to right click
+the Label Selector, and select ‘Duplicate Event Case.’
+* image:Pictures/100002010000015F0000013A6C0307EDBAE30F54.png[image,width=351,height=314]Select
+‘Boolean 2’ on the Edit Events window.
+
+image:Pictures/100002010000030B00000260C65E38B60578DC61.png[image,width=618,height=482]
+
+* It’s important to change the DO Constant when the case has been
+duplicated. (DO1 for Boolean, DO2 for Boolean 2, etc.) Duplicate this
+case 2 more times for DO3, and DO4.
+* image:Pictures/10000201000001530000012C82BEEF52D2B95BC3.png[image,width=338,height=300]At
+this point your Front Panel may look a little messy, take some time to
+clean it up. This will make it easier to use when you have finished
+building the program.
+
+image:Pictures/1000020100000152000000E39F9D8623AD8AC52E.png[image,width=338,height=226]image:Pictures/100002010000013A000000EBD0F1A6E815D6B8C1.png[image,width=308,height=230]You
+will be able to Run the program now, however, it will Stop after one
+Boolean has been selected. We can make this more efficient.
+
+* Back on the Block Diagram we will need to add a While Loop. Right
+click to bring up the Functions Palette, hover over ‘Structures’ and
+select ‘While Loop.’
+* image:Pictures/100002010000024600000298A1DCC5CEE0314256.png[image,width=505,height=576]image:Pictures/10000201000001C8000001955FCB6BF08C0937AF.png[image,width=391,height=348]Place
+the While Loop around the Event Structure.
++
+* Go to the Front Panel, so we can add a ‘Stop’ button that we’ll
+connect to the Loop Condition. Right click to bring up the Controls
+Palette, hover over ‘Boolean, then select ‘Stop Button.’
+* image:Pictures/10000201000002B60000022D8024972D6EFF9511.png[image,width=618,height=496]image:Pictures/100002010000025F000001E8692AF4F374556359.png[image,width=607,height=402]We
+will also need to create a new Event Case for this Stop button. Right
+click on the Selector Label and select ‘Add Event Case.’
++
+* Place the ‘Stop’ control inside the new case.
+* image:Pictures/10000201000001BD000001942166127156529996.png[image,width=445,height=403]Right
+click the Selector Label and select ‘Edit Events Handled by This Case’
+
+image:Pictures/10000201000001FC0000019AFCBA1D6EF453119D.png[image,width=508,height=410]
+
+* When the ‘Edit Events’ window pops up choose the ‘stop’ option in the
+‘Event Sources’ table.
+* image:Pictures/10000201000003130000026762BBF00EADEB6910.png[image,width=618,height=483]Our
+last step is to wire a ‘True’ constant to the Loop condition. Right
+click to bring up the Functions Palette, hover over ‘Boolean’ and select
+‘True Constant.’
+* Place the Constant inside the Event Structure.
++
+image:Pictures/10000201000002B60000025E1DA9C3313573E43A.png[image,width=472,height=412]
+* Wire the constant to the Loop Condition, like the image below.
+* image:Pictures/10000201000001BE00000193DCE0F91297DFC428.png[image,width=413,height=373]The
+program will now run successfully. You will be able to turn the LEDs on
+and off as many times as you want. You can use the Stop button to stop
+the execution of the program.
+
+== 
+
+== [#anchor-14]####Lesson 5 – Numbers, Graphs and Charts
+
+=== [#anchor-15]####Optional: Setting up the Hardware (Analog input)
+
+Wire your hardware like the image below.
+
+image:Pictures/1000000000000353000002CD3ED04DCA7578AFAF.png[image,width=511,height=431]
+
+=== image:Pictures/1000020100000219000002B855A7277BAF6E418A.png[image,width=217,height=281]image:Pictures/100002010000054800000351543165E1F212E2E9.png[image,width=454,height=285]
+
+=== [#anchor-16]####Lesson Instructions
+
+==== [#anchor-17]####Analog Input
+
+Now you have made working programs using Digital Inputs and Outputs,
+it’s time to have a look at the Analog Inputs and Outputs.
+
+For this lesson you will be focusing on the Analog Inputs.
+
+image:Pictures/10000201000003DB000003623B6B1D0F5E7D1A11.png[image,width=473,height=415]image:Pictures/100002010000015D0000022C7527E2FBC696CF0B.png[image,width=130,height=227]
+
+* Like the lessons before, start with placing the Initialize.vi, and the
+Close.vi on a new Block Diagram.
+
+* Right click to bring up the Functions Palette. Follow along with the
+image below and place the ReadAI.vi on the diagram.
+* image:Pictures/10000201000004BA000003B1BCF5AFB7B8EF2703.png[image,width=548,height=428]You
+want to create a constant by right clicking on Analog Input on the left
+of the ReadAIs.vi, and selecting Create Constant.
+
+image:Pictures/10000201000002A7000002D4B47E28745E7624AF.png[image,width=399,height=246]
+
+* image:Pictures/100002010000033F000002F0FD9024F38611D482.png[image,width=398,height=360]Create
+an Indicator for the Analog value on the right side of the vi.
+* image:Pictures/1000000000000268000000FC858524B7BC054B39.png[image,width=417,height=96]Wire
+your program like the image below.
++
+The program will successfully run at this point, however, it will
+execute too fast to move the Analog Sticks for continuous data.
+* Timage:Pictures/1000020100000339000001C99249D6CF9547F81A.png[image,width=465,height=258]o
+fix this issue, you can add a While Loop. Bring up the Functions
+Palette, then ‘Structures’, and select ‘While Loop’. Place this around
+the ReadAIs.vi, but leave space for other functions.
+* [#anchor-18]##image:Pictures/10000201000003000000016936B1FBFF840CED08.png[image,width=477,height=224]A
+While Loop will not work without adding a Loop Condition. In most cases
+this will simply be a Stop Boolean. Right click on the Loop Condition
+and ‘Create Control’.
++
+image:Pictures/100002010000021F000000F3840B7F8E8811D160.png[image,width=330,height=148]This
+will automatically add a Stop Boolean onto the Front Panel.
+* You can run the program now and when you turn the Analog Sticks the
+value will show.
+
+image:Pictures/1000020100000715000003642A250100CA460F6B.png[image,width=373,height=146]If
+you are using physical Pico Bread Board and Analog Board you will notice
+the ‘Value’ Indicator will flicker between numbers, this is normal and
+is simply extra ‘noise’ from the equipment.
+
+* However, it is also possible to replace this with a Chart which will
+show the data continuously.
+image:Pictures/100002010000056900000211EC6DD98EE8316E36.png[image,width=486,height=259]Right
+click on the Value Indicator, and hover over Replace. This will bring up
+the Control Palette. Select Graph and then a Waveform Chart.
+image:Pictures/1000020100000335000003898FCCF1755846F683.png[image,width=397,height=338]
+
+==== [#anchor-19]####Analog Output (Write)
+
+=== [#anchor-20]####Optional: Setting up the Hardware (Analog Output)
+
+Wire your hardware like the image below.
+
+image:Pictures/10000000000002C600000255D8463F14751615C5.png[image,width=485,height=407]
+
+image:Pictures/1000020100000311000001EE595117C19F635F0D.png[image,width=563,height=354]
+
+* image:Pictures/100002010000048600000356FC26A79B1171D030.png[image,width=511,height=377]Beginning
+with a Block Diagram with an Initialize.vi and a Close.vi. Right click
+to bring up the Functions Palette. Follow along with the image below and
+add the WriteAO.vi onto the diagram.
+* Wire up the 3 VIs.
+* Right click on the ‘Analog Output’ terminal and Create a Constant. For
+this exercise the Analog Output will produce 2 different pieces of
+numerical data, therefore 2 constants will be grouped
+intimage:Pictures/10000201000001CC000001339B0425CBF2BAE765.png[image,width=288,height=172]o
+a Cluster.
+
+image:Pictures/1000020100000044000000961E71DDDB04AD0C42.png[image,width=36,height=79]
+
+* You will need to create a Bundle. Right click on the Block Diagram to
+bring up the Functions palette, hover over ‘Cluster, Class, & Variant,
+then select ‘Bundle By Name.’
+
+image:Pictures/100002010000033F0000015B48C83A00622A6687.png[image,width=521,height=193]
+
+* Delete the wire connected to the subVI, as it needs to be wired into
+the bundle you built before.
+* image:Pictures/1000020100000112000000C821EBA7FC7AB49C5A.png[image,width=207,height=151]Wire
+the bundle and the like the image below.
+* Once wired
+uimage:Pictures/10000201000001E4000000EF88CA8E9734F018E9.png[image,width=403,height=172]p,
+you will notice that the bundle has the label ‘Duty’. Expand the Bundle
+down so the ‘Frequency’ label is
+visiimage:Pictures/10000201000000DC000000C4885C9DE58C6D062E.png[image,width=196,height=174]ble.
+* Right click at the edge of the bundle and create Constants for ‘Duty’
+and ‘Frequency.’
+* image:Pictures/100000000000021F000000E80B4B038809A0E38E.png[image,width=401,height=171]The
+fimage:Pictures/1000020100000262000001247299D8FA18AE2F04.png[image,width=542,height=234]ront
+panel should look like the image below. However, this needs some
+adjusting.
++
+_Using ‘Numeric Control’ may be a little fiddly when the program runs,
+so in this case you will swap these out for ‘Vertical Pointer Slides.’_
+* image:Pictures/100002010000022D000001D858C32932C7AF9AEA.png[image,width=382,height=298]image:Pictures/100000000000008C000000AE269AA1DB2BE1505A.png[image,width=108,height=134]Right
+click on the ‘Duty’ Control and hover over ‘Replace.’ Select ‘Numeric’
+and then ‘Vertical Pointer Slide.’ Do the same for the ‘Frequency’
+Control.
+* image:Pictures/100002010000021F000001BFA380DBA7C8F34BFB.png[image,width=486,height=400]You
+will need to change the ‘Scale’ of the ‘Frequency’ slider. Right click
+on the Slider, select ‘Scale’, ‘Mapping’, then ‘Logarithmic.’
+
+_A logarithmic scale is useful when the data you are displaying is much
+less or much more than the rest of the data, or when the percentage
+differences between values are important. _
+
+* The ‘Duty’ slider can stay as a Linear scale.
+* image:Pictures/10000201000000D7000000EDBBACE07AE141E37D.png[image,width=148,height=183]image:Pictures/10000201000000FE000000C79012D6312FC25E4A.png[image,width=178,height=184]Now
+you need to set the top and bottom points on the sliders. You will only
+need to change the highest point for ‘Duty’. Set it to ‘1’.
+* For ‘Frequency’ the lowest point should be ‘10’ and the highest
+‘500,000.’
+
+Now let’s head back to the Block Diagram and finish building the
+program.
+
+* image:Pictures/100002010000027900000151000F79335E1B6B35.png[image,width=370,height=336]Bring
+up the Functions Palette by right clicking on the Block Diagram, hover
+over ‘Structures’ and select a For Loop. Place the For Loop around the
+WriteAO.vi.
+* A For Loop needs a ‘Loop Count.’ Choose a number that will allow you
+to time to use the dials and see how it executes on the Waveform Chart.
+
+image:Pictures/100002010000012D000000A7088DF62399ECFF01.png[image,width=301,height=167]
+
+* You will need to slow down the Program before running it. Bring up the
+Functions Palette, select ‘Timing’ and place the ‘Wait (ms)’ function
+inside the For Loop.
+* Righimage:Pictures/100002010000034E0000026195BD5436163DE4AD.png[image,width=519,height=374]t
+click the left hand terminal on the Wait function and create a Constant.
+Type in ‘100’ this will slow the program down enough for you to see the
+results.
++
+image:Pictures/1000020100000124000000878FA1E712144EAE15.png[image,width=292,height=135]
+* image:Pictures/1000020100000780000003C9D530B0D176C17462.png[image,width=680,height=343]You
+can now run your program. Move the Vertical Pointer Slides up and down
+and you will be results will show on the Emulator.
+
+==== [#anchor-21]####Analog Output (Read)
+
+If you want a more accurate representation for the ‘Duty’ and
+‘Frequency’ sliders you can use the ReadAOs.vi.
+
+Place the ReadAOs.vi inside the For Loop by repeat the same process you
+learnt at the beginning of the
+Anaimage:Pictures/1000020100000518000003A7E78FBE941C432674.png[image,width=528,height=379]log
+Output (Write) lesson.
+
+* image:Pictures/10000201000002630000016735D9119529E2F37C.png[image,width=451,height=265]Wire
+the subVI as show in the image below. Right click on the ‘AnalogOutput’
+terminal and create a Constant, then create an Indicator for the
+‘AnOutValues.’
+* image:Pictures/1000020100000158000000AED1A9006DCDA3030F.png[image,width=218,height=110]You
+can now run the program, and you will see the Values for ‘Duty’ and
+‘Frequency’ on the Front Panel.
+
+If you are
+usimage:Pictures/10000201000003D6000003355240680D683DCBEE.png[image,width=529,height=442]ing
+the Simulator the values for both will appear on the Emulator.
+
+== [#anchor-22]####General Concepts
+
+=== [#anchor-23]####VIs (Virtual Instruments)
+
+Programs in LabVIEW are called VIs (Virtual Instruments). In other
+programming languages a VI is similar to a function or a subroutine. A
+VI includes a Front Panel and a Block Diagram, the VIs Icon and its
+Connector Pane.
+
+* Front Panel
++
+The front panel window is the user interface for the VI. You create the
+window with controls and indicators, these are the interactive input and
+output terminals of the VI.
++
+* Block Diagram
++
+The Block Diagram is where you will create the code for your program.
+The block diagram will implement graphical representations of functions
+to control the objects on the front panel. Objects on the front panel
+will appear as terminals on the block diagram.
++
+* Icons, Connector Panes, and SubVIs
++
+The icon and connector pane allow you to use and view the VI in another
+VI. This is called a SubVI, to use a SubVI you must build a connector
+pane. Customising the Icon is recommended to help with reading and
+understanding the program.
+** The Icon is displayed in the upper right corner of the VI, it is a
+graphical representation of the VI. The icon can be customised with text
+and images to help identify what the VI does.
+** The connector pane is a set of terminals on the icon the corresponds
+to the controls and indicators of the VI.
+
+image:Pictures/100002010000008800000074F53D1EE56C02625F.png[image,width=93,height=95]image:Pictures/100002010000007400000081A283B9F8FCE6C670.png[image,width=92,height=85]
+
+=== 
+
+=== [#anchor-24]####Data **T**ypes
+
+Each variable in a program must have a data type. The data types
+determines what type of value the variable will hold.
+
+Numeric –
+
+* Integer (int) – whole numbers (e.g., -700, 0, 700)
+* Floating point (float) – numbers with fractions (decimals) (e.g.,
+700.0, 0.7)
+
+Boolean – represents 2 states (e.g., true, or false, 1 or 0)
+
+String – sequence of characters, digits, or symbols – always treated as
+text (e.g., hello)
+
+Enumerated type – predefined unique values (can be text or numerical)
+(e.g., rock (0) jazz (1)
+
+Character – a single letter, digit, punctuation mark, symbol, or blank
+space.
+
+Array – stores multiple elements in a specific order. Note: black means
+no datatype selected. Drop another datatype into the array to make an
+array of that datatype.
+
+image:Pictures/1000020100000451000000F3ECA8E5829661F30E.png[image,width=734,height=161]
+
+_Note: right click on a data type terminal and select ‘View as Icon’
+depending on your preference. (The 2_^_nd_^_ row shows the terminals as
+icons.)_
+
+=== 
+
+=== [#anchor-25]####While Loops
+
+While Loops allow portions of a program to execute repeatedly until a
+certain condition is met.
+
+[arabic]
+. image:Pictures/1000020100000128000000DFE232CC16178E3979.png[image,width=257,height=190]Iteration
+Terminal – the iteration terminal provides the current loop iteration.
++
+. Conditional Terminal – Evaluates a Boolean input value at the end of
+each loop iteration, if the conditional terminal is met then the loop
+stops.
++
+
+=== [#anchor-26]####For Loops
+
+A For Loop executes a sub-diagram a certain number of times. This value
+is wired to the Count Terminal (N).
+
+image:Pictures/100002010000011A000000D9C3EC0DAD379A8176.png[image,width=275,height=210]
+
+[arabic]
+. Iteration Loop – Indicates the number of completed iterations.
++
+. Count Terminal – Specifies the number of times to execute the code
+inside the For Loop.
+
+=== [#anchor-27]####Event Structures
+
+An Event Structure waits until an event occurs, then executes the
+appropriate case to handle that event.
+
+image:Pictures/1000020100000116000000D88A2A753B54F7230E.png[image,width=298,height=232]
+
+[arabic]
+. The event selector label specifies which events cause the displayed
+case to execute.
++
+. The Timeout terminals specifies the number of milliseconds to wait for
+an event before timing out.
+
+[arabic]
+. The Event Data Node identifies the data LabVIEW returns when an event
+occurs
