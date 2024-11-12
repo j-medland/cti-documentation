@@ -26,7 +26,7 @@ image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espani
 
 Después simplemente esperará por una conexión. "`Connecting`" será mostrado en la barra de estado.
 
-= Lección 1 -- LabVIEW "`Hello World`" LED On/Off
+=== Lección 1 -- LabVIEW "`Hello World`" LED On/Off
 
 *Opcional*: Configurando el Hardware
 
@@ -34,7 +34,7 @@ Si tienes el hardware para este curso, necesitaras configurarlo y conectarlo com
 
 image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espanish/assets/5545396/19efa352-e5e0-420e-9437-6cefb5fb1a49[image]
 
-== Instrucciones
+=== Instrucciones
 
 El equivalente en LabVIEW de un programa "`Hello World`" es hacer que una pieza de hardware haga algo básico, usualmente es hacer un led parpadear (ON-Off).
 Arranca LabVIEW y selecciona New VI.
@@ -132,7 +132,7 @@ Pero, algo mas importante es que el LED del hardware se ha encendido!
 
 image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espanish/assets/5545396/465b4cdf-0aa2-4014-92a6-4eab1eb42a3c[image]
 
-= Lección 2 - Ciclos For (For Loops)
+== Lección 2 - Ciclos For (For Loops)
 
 Opcional: Configuración de Hardware
 
@@ -142,7 +142,7 @@ image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espani
 
 image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espanish/assets/5545396/ab4506dc-f5f3-4008-a3b9-03123cd26ebf[image]
 
-== Instrucciones
+=== Instrucciones
 
 Un ciclo For ejecuta un sub-diagrama un número determinado de veces. En este caso, aprenderás a construir un programa que hace parpadear un LED 10 veces antes de detenerse.
 
@@ -194,7 +194,7 @@ image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espani
 
 Ahora ejecute el programa. Ha utilizado con éxito un ciclo For para hacer parpadear la salida digital.
 
-= Lección 3 - Ciclos While - While Loops
+== Lección 3 - Ciclos While - While Loops
 
 Opcional: Configuración del Hardware
 Conecta el hardware de la siguiente manera:
@@ -203,7 +203,7 @@ image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espani
 
 image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espanish/assets/5545396/de741e88-970b-4f3c-8d0d-307193177107[image]
 
-== Instrucciones
+=== Instrucciones
 
 El ciclo While ejecuta el subdiagrama hasta que ocurre una condición específica. Siempre se ejecutará al menos una vez.
 
@@ -235,7 +235,7 @@ image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espani
 
 image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espanish/assets/5545396/54f52bc0-7a5e-4f27-b68c-5fb68d4cdade[image]
 
-= Lección 4 - Estructura de Eventos - Event Structure
+== Lección 4 - Estructura de Eventos - Event Structure
 
 Opcional: Configuración de Hardware
 Conecte el hardware de la siguiente manera:
@@ -244,7 +244,7 @@ image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espani
 
 image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espanish/assets/5545396/bfba31c3-231d-44f0-852b-3f20378f4bf3[image]
 
-== Instrucciones
+=== Instrucciones
 
 Una estructura de eventos espera hasta que ocurra un determinado evento y luego ejecuta el caso apropiado para manejar ese evento. En este ejemplo, queremos presionar un botón y la luz correspondiente para encenderla.
 
@@ -353,7 +353,7 @@ image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Spanis
 
 El programa ahora se ejecutará exitosamente. Podrá encender y apagar los LED tantas veces como quieras. Puede utilizar el botón Stop para detener la ejecución del programa.
 
-= Lección 5 - Números, Gráficas y Tablas
+== Lección 5 - Números, Gráficas y Tablas
 
 Opcional: Configuración del Hardware
 
@@ -365,7 +365,7 @@ image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Spanis
 
 image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Spanish/assets/5545396/e2a09693-e729-4f72-b7af-9d67f6fa4efd[image]
 
-== Instrucciones
+=== Instrucciones
 
 === Entrada Analógica (Analog Input)
 
