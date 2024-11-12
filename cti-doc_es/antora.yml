@@ -1,5 +1,5 @@
-name: cti-doc_es
-title: Entrenamiento {lv}
+name: cti-doc
+title: Entrenamiento LabVIEW
 version: ~
 nav:
   - modules/ROOT/nav.adoc

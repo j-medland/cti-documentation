@@ -1,5 +1,5 @@
-name: cti-doc_fr
-title: Formation {lv}
+name: cti-doc
+title: Formation LabVIEW
 version: ~
 nav:
   - modules/ROOT/nav.adoc
