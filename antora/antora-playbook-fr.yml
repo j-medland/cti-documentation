@@ -1,5 +1,5 @@
 site:
-  title: CTI documentation
+  title: Documentation CTI
   # the 404 page and sitemap files only get generated when the url property is set
   url: https://labviewcommunitytraining.github.io/cti-documentation/fr
   start_page: cti-doc::index.adoc

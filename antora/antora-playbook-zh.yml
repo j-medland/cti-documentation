@@ -1,20 +1,20 @@
 site:
-  title: Documentación CTI
+  title: CTI文档
   # the 404 page and sitemap files only get generated when the url property is set
-  url: https://labviewcommunitytraining.github.io/cti-documentation/es
+  url: https://labviewcommunitytraining.github.io/cti-documentation/zh
   start_page: cti-doc::index.adoc
   robots: allow
 antora:
   extensions:
   - require: '@antora/lunr-extension'
-    languages: [es]
+    languages: [zh]
 urls:
   latest_version_segment: latest
   latest_version_segment_strategy: redirect:to
 content:
   sources:
   - url: ./../
-    start_paths: cti-doc_es
+    start_paths: cti-doc_zh
   
 asciidoc:
   attributes:
