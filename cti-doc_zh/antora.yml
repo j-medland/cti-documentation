@@ -1,0 +1,8 @@
+name: cti-doc
+title: LabVIEW培训
+version: ~
+nav:
+  - modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    wip: 此页正在编写中

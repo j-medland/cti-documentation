@@ -1,0 +1,13 @@
+= 设置说明
+
+IMPORTANT: {wip}
+
+== Installer Virtualbox
+
+访问 https://www.virtualbox.org/wiki/Downloads[Virtualbox.org] 并下载最新版本并安装。
+
+image::virtualbox-website.png[]
+
+== Importer VM
+
+下载 https://downloads.gcentral.org/vm/20231021_OpenSUSE_CTIBase.ova [OVA 文件]
