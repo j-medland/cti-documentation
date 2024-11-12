@@ -29,6 +29,8 @@ jobs:
         node-version: '18'
     - name: Install Antora with the Antora Lunr Extension
       run: npm i antora @antora/lunr-extension
+    - name: Install chineese indexing support for Lunr # See https://gitlab.com/antora/antora-lunr-extension#user-content-support-for-other-languages
+      run: npm i @node-rs/jieba
     - name: Generate English Site
       run: npx antora --to-dir build/sites/en antora/antora-playbook-en.yml
     - name: Generate French Site
