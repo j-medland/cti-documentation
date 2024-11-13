@@ -5,4 +5,5 @@ nav:
   - modules/ROOT/nav.adoc
 asciidoc:
   attributes:
-    wip: This page is under construction
+    wip: This section is under construction
+    nt: Need translation from

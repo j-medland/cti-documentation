@@ -1,3 +1,5 @@
 = Emulateur d'instrument pour {lv}
 
 IMPORTANT: {wip}
+
+IMPORTANT: {nt} anglaise

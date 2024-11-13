@@ -1,0 +1,29 @@
+= How to contribute to the CTI project
+
+NOTE: This documentation website and the associated material are free under the https://github.com/LabVIEWCommunityTraining/cti-documentation/blob/main/LICENSE[MIT license].
+
+== Contributing to the documentation
+
+There are multiple ways to contribute to the documentation.
+
+* Adding content
+* Translate exisiting content
+* Improve content by fixing typo, spelling, formating…
+
+=== How to edit a page
+
+To edit the page content do the following thing:
+
+IMPORTANT: To edit content you  need to have a https://github.com/[GitHub] account.
+
+* Go to the page to edit
+* Click on the `Edit this Page` link at the top right of the page
+* Edit the file
+* Create a Pull Request
+
+[TIP]
+====
+The content is writen using the https://asciidoc.org/[AsciiDoc] markup language.
+
+To learn the basics and advanced features of this language, visit the https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoc documentation website].
+====

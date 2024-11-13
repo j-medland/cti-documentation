@@ -2,6 +2,8 @@
 
 IMPORTANT: {wip}
 
+IMPORTANT: {nt} anglaise
+
 == Installer Virtualbox
 
 Aller sur  https://www.virtualbox.org/wiki/Downloads[Virtualbox.org] et télécharger la dernière version et l'installer.
