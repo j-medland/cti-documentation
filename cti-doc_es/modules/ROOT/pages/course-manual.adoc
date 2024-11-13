@@ -524,21 +524,21 @@ _Si está utilizando el Simulador, los valores de ambos aparecerán en el Emulad
 
 image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Spanish/assets/170447709/ad7fac14-7f47-4e37-ac02-209410818c0f[read4]
 
-= Conceptos Generales
+== Conceptos Generales
 
-== VIs (Virtual Instruments) (Instrumentos Virtuales)
+=== VIs (Virtual Instruments) (Instrumentos Virtuales)
 
 Los programas en LabVIEW se denominan VI (Instrumentos virtuales). En otros lenguajes de programación, un VI es similar a una función o una subrutina. Un VI incluye un Panel Frontal y un Diagrama de Bloques, el ícono del VI y su Panel de Conectores.
 
-=== Panel Frontal
+==== Panel Frontal
 
 La ventana del panel frontal es la interfaz de usuario del VI. Usted crea la ventana con controles e indicadores, estos son los terminales interactivos de entrada y salida del VI.
 
-=== Diagrama de Bloques
+==== Diagrama de Bloques
 
 El diagrama de bloques es donde creará el código para su programa. El diagrama de bloques implementará representaciones gráficas de funciones para controlar los objetos en el panel frontal. Los objetos en el panel frontal aparecerán como terminales en el diagrama de bloques.
 
-=== Íconos, Panel de Conectores, y SubVIs
+==== Íconos, Panel de Conectores, y SubVIs
 
 El ícono y panel de conectores le permite usar y ver el VI en otro VI. Esto se llama SubVI; para utilizar un SubVI debe crear un panel conector. Se recomienda personalizar el ícono para ayudar a leer y comprender el programa.
 
@@ -553,7 +553,7 @@ Panel de Conectores
 
 image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Spanish/assets/170447709/2b383660-8e69-492e-b5f2-3a9884b9e0ba[icon2]
 
-== Tipos de Datos
+=== Tipos de Datos
 
 Cada variable de un programa debe tener un tipo de datos. Los tipos de datos determinan qué tipo de valor contendrá la variable.
 
@@ -572,7 +572,7 @@ image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Spanis
 
 _Nota: haga clic derecho en un terminal de tipo de datos y seleccione 'Ver como icono' según su preferencia. (La segunda fila muestra los terminales como iconos)._
 
-== Ciclos While
+=== Ciclos While
 
 Los ciclos While permiten que partes de un programa se ejecuten repetidamente hasta que se cumpla una determinada condición.
 
@@ -581,7 +581,7 @@ image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Spanis
 . Terminal de Iteración - la terminal de iteración provee la iteración del ciclo actual
 . Terminal Condicional - evalúa un valor de entrada *booleano* al final de cada iteración del ciclo, si la terminal condicional se cumple entonces el ciclo termina.
 
-== Ciclos For
+=== Ciclos For
 
 Un ciclo For ejecuta un subdiagrama un determinado número de veces. Este valor está conectado al terminal de conteo (N).
 
@@ -590,7 +590,7 @@ image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Spanis
 . Ciclo de Iteración - indica el número de iteraciones completadas
 . Terminal de Conteo - Especifíca el número de veces que se ejecutará el código dentro del ciclo For
 
-== Estructuras de Eventos
+=== Estructuras de Eventos
 
 Una estructura de eventos espera a que un evento ocurra, y luego ejecuta el caso apropiado para manejar ese evento.
 
