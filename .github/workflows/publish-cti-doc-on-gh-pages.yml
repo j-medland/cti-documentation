@@ -27,6 +27,10 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
+    - name: Install Gulp for building the UI
+      run: npm i -g gulp-cli
+    - name: Build UI
+      run: gulp bundle -f ./user-interface/gulpfile.js
     - name: Install Antora with the Antora Lunr Extension
       run: npm i antora @antora/lunr-extension
     - name: Install chinese indexing support for Lunr # See https://gitlab.com/antora/antora-lunr-extension#user-content-support-for-other-languages
