@@ -1,5 +1,5 @@
 * xref:index.adoc[Instrucciones Para Tutor]
 * xref:course-manual.adoc[Manual del Curso]
 * xref:labview-instrument-emulator.adoc[Emulador de instrumento en {lv}]
-* xref:labview-instrument-drivers.adoc[Drivers para el Hardware en {lv}]
+* xref:labview-instruments-drivers.adoc[Drivers para el Hardware en {lv}]
 * xref:contributing.adoc[Cómo contribuir]
