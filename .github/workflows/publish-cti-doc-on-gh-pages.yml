@@ -29,6 +29,8 @@ jobs:
         node-version: '18'
     - name: Install Gulp for building the UI
       run: npm i -g gulp-cli
+    - name: Install Gulp locally for building the UI
+      run: npm i gulp-cli ./user-interface
     - name: Build UI
       run: gulp bundle -f ./user-interface/gulpfile.js
     - name: Install Antora with the Antora Lunr Extension
