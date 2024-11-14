@@ -7,7 +7,7 @@ asciidoc:
   attributes:
     wip: Esta pagina esta siendo escrita
     nt: Necesito traducción de la página en
-    # Spanish translation, courtesy of Eddú Meléndez <eddu.melendez@gmail.com> with updates from Fede Mendez <federicomh@gmail.com>
+    # Spanish translation, courtesy of Eddú Meléndez <eddu.melendez@gmail.com> with updates from Fede Mendez <federicomh@gmail.com> --> https://github.com/asciidoctor/asciidoctor/tree/main/data/locale
     appendix-caption: Apéndice
     appendix-refsig: {appendix-caption}
     caution-caption: Precaución
