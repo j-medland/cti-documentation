@@ -14,10 +14,7 @@ urls:
 content:
   sources:
   - url: ./../
-  #- url: /Users/olivierjourdan/Documents/git-repositories/cti/cti-documentation
-    #branches: main
     start_paths: cti-doc_en
-  
 asciidoc:
   attributes:
     experimental: ''

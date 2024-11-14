@@ -15,7 +15,6 @@ content:
   sources:
   - url: ./../
     start_paths: cti-doc_fr
-  
 asciidoc:
   attributes:
     experimental: ''

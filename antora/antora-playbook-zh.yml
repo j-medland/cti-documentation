@@ -8,7 +8,6 @@ antora:
   extensions:
   - require: '@antora/lunr-extension'
     languages: [zh]
-  #- require: '@node-rs/jieba'
 urls:
   latest_version_segment: latest
   latest_version_segment_strategy: redirect:to
@@ -16,7 +15,6 @@ content:
   sources:
   - url: ./../
     start_paths: cti-doc_zh
-  
 asciidoc:
   attributes:
     experimental: ''
