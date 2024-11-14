@@ -6,7 +6,7 @@ nav:
 asciidoc:
   attributes:
     wip: 此页正在编写中
-    // Traditional Chinese translation, courtesy of John Dong <dongwqs@gmail.com> --> https://github.com/asciidoctor/asciidoctor/tree/main/data/locale
+    # Traditional Chinese translation, courtesy of John Dong <dongwqs@gmail.com> --> https://github.com/asciidoctor/asciidoctor/tree/main/data/locale
     appendix-caption: 附錄
     appendix-refsig: {appendix-caption}
     caution-caption: 注意
