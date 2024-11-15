@@ -6,7 +6,7 @@ NOTE: Ce site web et le contenue associé sont libre d'usage sous condition de h
 
 Il y a plusieurs manière de contribuer à la documentation.
 
-* ajouter du contenu
+* Ajouter du contenu
 * Traduire du contenu existent
 * Améliorer le contenu…
 
