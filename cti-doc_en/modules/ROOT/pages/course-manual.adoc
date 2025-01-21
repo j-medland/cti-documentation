@@ -7,14 +7,12 @@ IMPORTANT: {wip}
 == Setting up the System
 
 See../GettingStartedLabVIEW1-English/2) Tutor Instructions/Tutor
-Instructions 1.odt
+Instructions 1.odt //// TO-DO Change this to point to the index.adoc page ////
 
 * If you are using the Emulator, load it by navigating to
 /root/Desktop/GettingStartedLabVIEW1-English-main/3) LabVIEW Instrument
 Emulator/builds/HandsOn/CTIPicoVISAEmulator/
 * Right-click in the window and select Open Terminal Here
-
-image::virtualbox-website.png[]
 
 image::virtualbox-website.png[]
 
@@ -28,12 +26,11 @@ image:Pictures/100000000000051E00000366063B2EEA23AE7CB2.png[image,width=94,heigh
 
 * It will then sit waiting for a connection. “Connecting” will be
 displayed in status bar.
+ 
 
-== 
+== Lesson 1 – LabVIEW “Hello World” LED On/Off
 
-== [#anchor-1]##*Lesson 1* – LabVIEW “Hello World” LED On/Off
-
-=== [#anchor-2]####Optional: Setting up the Hardware 
+=== Optional: Setting up the Hardware 
 
 If you have the hardware for this course then you will need to set up
 and wire it as shown in the image
@@ -42,7 +39,7 @@ If not skip to *Lesson Instructions*.
 
 image:Pictures/10000000000004FB000002CDE0C3A99980ABFA3B.png[image,width=395,height=276]
 
-=== [#anchor-3]####Lesson Instructions
+=== Lesson Instructions
 
 The LabVIEW version of a “Hello World” program is to make a piece of
 hardware do something basic, usually it is turning an LED On and Off.
