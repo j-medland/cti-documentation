@@ -14,7 +14,9 @@ Instructions 1.odt
 Emulator/builds/HandsOn/CTIPicoVISAEmulator/
 * Right-click in the window and select Open Terminal Here
 
-image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Espanish/assets/5545396/9edd704c-c81b-4c34-a92f-416af763ec48[image]
+image::virtualbox-website.png[]
+
+image::virtualbox-website.png[]
 
 * Type in./CTIPicoVISAEmulator.exe
 
