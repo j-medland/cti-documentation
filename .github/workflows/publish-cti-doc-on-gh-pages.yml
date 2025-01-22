@@ -33,8 +33,10 @@ jobs:
       run: npm i gulp-cli ./user-interface
     - name: Build UI
       run: gulp bundle -f ./user-interface/gulpfile.js
-    - name: Install Antora with the Antora Lunr Extension
-      run: npm i antora antora/lunr-extension@1.0.0-alpha.8
+    - name: Install Antora
+      run: npm i antora
+    - name: Install the Antora Lunr Extension
+      run: npm i lunr-extension@1.0.0-alpha.8
     - name: Install chinese indexing support for Lunr # See https://gitlab.com/antora/antora-lunr-extension#user-content-support-for-other-languages
       run: npm i nodejieba
     - name: Generate English Site
