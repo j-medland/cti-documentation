@@ -1,0 +1,27 @@
+= cti-documentation
+
+This is a multilingual repository to host all of the documentation for the LabVIEW Community Training Initiative.
+
+== Building and publishing the site
+
+The site is build and published automatically as soon as a push on the repository is done.
+See the Actions tab for details.
+
+== Building the site localy
+
+Execute the following steps:
+
+. Builiding the web site ui:
+* open a terminal in the `user-interface` folder
+* execute the following command `npx gulp bundle`
+. Build the website
+* open a terminal in the `antora` folder
+* execute the following command `npx antora --ui-bundle-url ../user-interface/build/ui-bundle.zip --to-dir build/sites/en  antora-playbook-en.yml`
+
+Once built,the website is available in the `/antora/build/sites/en` folder.
+
+IMPORTANT: to build the web site locally make sure to follow the presrequsites listed https://docs.antora.org/antora-ui-default/prerequisites/[here] AND https://docs.antora.org/antora/latest/install-and-run-quickstart/[there]
+
+== Contribute to the documentation
+
+Please follow the instruction available https://labviewcommunitytraining.github.io/cti-documentation/en/cti-doc/contributing.html#contributing-to-the-documentation[here] to contribute to the documentation.
