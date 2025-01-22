@@ -36,7 +36,7 @@ jobs:
     - name: Install Antora
       run: npm i antora
     - name: Install the Antora Lunr Extension
-      run: npm i @antora/lunr-extension
+      run: npm i @antora/lunr-extension@1.0.0-alpha.9
     - name: Install chinese indexing support for Lunr # See https://gitlab.com/antora/antora-lunr-extension#user-content-support-for-other-languages
       run: npm i nodejieba
     - name: Install chinese indexing support for Lunr v2 # See https://gitlab.com/antora/antora-lunr-extension#user-content-support-for-other-languages
