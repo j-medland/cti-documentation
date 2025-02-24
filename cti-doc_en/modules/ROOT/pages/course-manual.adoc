@@ -7,13 +7,12 @@ IMPORTANT: {wip}
 == Setting up the System
 
 
-// TO-DO Change this to point to the index.adoc page
-See../GettingStartedLabVIEW1-English/2) Tutor Instructions/Tutor
-Instructions 1.odt
+See xref:index.adoc#inline[] 
 
 * If you are using the Emulator, load it by navigating to
 /root/Desktop/GettingStartedLabVIEW1-English-main/3) LabVIEW Instrument
 Emulator/builds/HandsOn/CTIPicoVISAEmulator/
+
 * Right-click in the window and select Open Terminal Here
 
 image::cm_001.00_Loading-CTIPicoVISAEmulator.png[]
