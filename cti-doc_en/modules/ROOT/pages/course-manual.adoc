@@ -102,13 +102,13 @@ issue left.
 
 image::cm_012.00_Ctrl-H_HandsOnPi20240_WriteDO.png[]
 
-This VI needs its Output and DO Value (True) wiring. So let`s create
+This VI needs its Output and DO Value (True) wiring. So let's create
 constants for them. Use the arrow on the right to select an output.
 
 image::cm_013.00_ArrowPointingToConstantDropDown-WriteDO.png[]
 image::cm_014.00_WriteDO_DO1(GPIO2).png[]
 
-It`s nice to have the constant label shown for booleans.
+It's nice to have the constant label shown for booleans.
 
 * Right-click on the `True` Boolean Constant. This will bring up a drop
 down window, hover over `Visible Items` and select `Label`.
@@ -125,7 +125,7 @@ Constants are terminals on the block diagram that supply fixed data
 values to the diagram. We`ll discuss data types etc. later in the
 session.
 
-* Finally let`s wire in a couple of outputs.
+* Finally let's wire in a couple of outputs.
 
 * Right-click on IDN for Initialize.vi and select `Create Indicator`.
 Then we need an error out, so Right-click at the bottom the Close.vi and
@@ -422,7 +422,7 @@ image::cm_062.00_RightClick-DuplicateEventCase.png[]
 
 image::cm_063.00_EventStructure-EditEventsWindow-Select-Boolean2.png[]
 
-* It`s important to change the DO Constant when the case has been
+* It's important to change the DO Constant when the case has been
 duplicated. (DO1 for Boolean, DO2 for Boolean 2, etc.) Duplicate this
 case 2 more times for DO3, and DO4.
 
@@ -652,7 +652,7 @@ need to change the highest point for `Duty`. Set it to `1`.
 * For `Frequency` the lowest point should be `10` and the highest
 `500,000.`
 
-NOTE: Now let`s head back to the Block Diagram and finish building the program.
+NOTE: Now let's head back to the Block Diagram and finish building the program.
 
 * Bring up the Functions Palette by Right-clicking on the Block Diagram, hover
 over `Structures` and select a For Loop. Place the For Loop around the
