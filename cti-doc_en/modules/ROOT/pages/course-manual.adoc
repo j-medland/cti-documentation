@@ -36,9 +36,11 @@ displayed in status bar.
 === Optional: Setting up the Hardware 
 
 Setting up the Pico Hardware
-Wiring for the Pico can be found in document: Course Manual Pico Wiring.odt //// TO-DO Need to convert this document to adoc and point here ////
+Wiring for the Pico can be found in document: Course Manual Pico Wiring.odt
+// TO-DO Need to convert this document to adoc and point here
 Setting up the Raxda Hardware
-Wiring for the Pico can be found in document: Course Manual Radxa X2L Wiring.odt //// TO-DO Need to convert this document to adoc and point it here ////
+Wiring for the Pico can be found in document: Course Manual Radxa X2L Wiring.odt
+// TO-DO Need to convert this document to adoc and point it here
 
 === Lesson Instructions
 
@@ -177,11 +179,12 @@ _(Optional)_
 
 === [#anchor-5]####Optional: Setting up the Pico Hardware
 
-////TO DO Need to add links to the wiring documents ////
+//TO DO Need to add links to the wiring documents
 Wiring for Pico
 
 === [#anchor-6]####Optional: Setting up the Raxda Hardware
-Wiring for Raxda////TO DO Need to add links to the wiring documents ////
+Wiring for Raxda
+//TO DO Need to add links to the wiring documents
 
 === [#anchor-7]####Lesson Instructions
 A For Loop executes a sub-diagram a set number of times. In this case
@@ -276,11 +279,13 @@ the Digital Output.
 _(Optional)_
 
 === [#anchor-9]####Optional: Setting up the Pico Hardware
-////TO DO Need to add links to the wiring documents ////
+
+//TO DO Need to add links to the wiring documents
 Wiring for Pico
 
 === [#anchor-10]####Optional: Setting up the Raxda Hardware
-Wiring for Raxda////TO DO Need to add links to the wiring documents ////
+Wiring for Raxda
+//TO DO Need to add links to the wiring documents
 
 
 === [#anchor-11]####Lesson Instructions
@@ -319,11 +324,13 @@ image::cm_047.00_WhileLoopWired-BooleanSwitchWiredToStopTerminal.png
 === [#anchor-12]####Exercise – Use DI to stop the loop
 === [#anchor-13]####Optional: Setting up the Pico Hardware
 
-////TO DO Need to add links to the wiring documents ////
+
+//TO DO Need to add links to the wiring documents
 Wiring for Pico
 
 === [#anchor-14]####Optional: Setting up the Raxda Hardware
-Wiring for Raxda////TO DO Need to add links to the wiring documents ////
+Wiring for Raxda
+//TO DO Need to add links to the wiring documents 
 
 Hint: wiring diagram for DI
 
@@ -333,11 +340,13 @@ image::cm_048.00_HandsOnPi20240_ReadDI.png[]
 
 === [#anchor-16]####Optional: Setting up the Pico Hardware
 
-////TO DO Need to add links to the wiring documents ////
+
+//TO DO Need to add links to the wiring documents
 Wiring for Pico
 
 === [#anchor-17]####Optional: Setting up the Raxda Hardware
-Wiring for Raxda////TO DO Need to add links to the wiring documents ////
+Wiring for Raxda
+//TO DO Need to add links to the wiring documents
 
 === [#anchor-18]####Lesson Instructions
 
@@ -485,11 +494,13 @@ the execution of the program.
 
 === [#anchor-20]####Optional: Setting up the Pico Hardware (Analog input)
 
-////TO DO Need to add links to the wiring documents ////
+
+//TO DO Need to add links to the wiring documents
 Wiring for Pico
 
 === [#anchor-21]####Optional: Setting up the Raxda Hardware
-Wiring for Raxda////TO DO Need to add links to the wiring documents ////
+Wiring for Raxda
+//TO DO Need to add links to the wiring documents
 
 
 === [#anchor-22]####Lesson Instructions
@@ -569,7 +580,8 @@ image::cm_087.00_FrontPanel-StopButton-ErrorOut-Chart.png[]
 Wiring for Pico
 
 === [#anchor-26]####Optional: Setting up the Raxda Hardware (Analog Output)
-Wiring for Raxda////TO DO Need to add links to the wiring documents ////
+Wiring for Raxda
+//TO DO Need to add links to the wiring documents
 
 * Beginning with a Block Diagram with an Initialize.vi and a Close.vi. Right-click
 to bring up the Functions Palette. Follow along with the image below and
@@ -674,11 +686,12 @@ image::cm_104.00_MovingSliders-HandsOnEmulatorDisplaysMovement.png[]
 
 === [#anchor-28]####Optional: Setting up the Pico Hardware (Read)
 
-////TO DO Need to add links to the wiring documents ////
+//TO DO Need to add links to the wiring documents
 Wiring for Pico
 
 === [#anchor-29]####Optional: Setting up the Raxda Hardware (Read)
-Wiring for Raxda////TO DO Need to add links to the wiring documents ////
+Wiring for Raxda
+//TO DO Need to add links to the wiring documents
 
 If you want a more accurate representation for the ‘Duty’ and
 ‘Frequency’ sliders you can use the ReadAOs.vi.
