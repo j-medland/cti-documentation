@@ -6,8 +6,10 @@ IMPORTANT: {wip}
 
 == Setting up the System
 
+
+// TO-DO Change this to point to the index.adoc page
 See../GettingStartedLabVIEW1-English/2) Tutor Instructions/Tutor
-Instructions 1.odt //// TO-DO Change this to point to the index.adoc page ////
+Instructions 1.odt
 
 * If you are using the Emulator, load it by navigating to
 /root/Desktop/GettingStartedLabVIEW1-English-main/3) LabVIEW Instrument
@@ -64,7 +66,8 @@ Drag and drop Initialize.vi, WriteDO.vi and Close.vi onto the block diagram
 as shown below.
 
 image::cm_008.00_DrangAndDrop-Initialize-WriteDO-Close.png[]
-_Notice that the Run-arrow is broken (the run arrow appears in the top left corner), if you press it, it will list all the reasons why it’s broken_.
+
+NOTE: The Run-arrow is broken (the run arrow appears in the top left corner), if you press it, it will list all the reasons why it’s broken.
 
 * LabVIEW will not let you run the source-code until these errors are
 sorted. Close the Error List and select all of the Vis. (Left-click drag
@@ -84,11 +87,10 @@ issues listed, good job!
 
 * Press Ctrl-H to bring up the context help window. Hover over
 Initialize.vi.
-+
 
 image::cm_011.00_Ctrl-H_HandsOnPi20240_Initialize.png[]
 
-_Notice that VISA resource name is *bold*. This means that it needs to have an input._
+NOTE: The VISA resource name is *bold*. This means that it needs to have an input.
 
 * Now, right-click on VISA Resource Name Initialize.vi and select create
 constant.
@@ -348,8 +350,8 @@ Loop and press the delete key. Do the same for the ‘True’ constant. Then
 remove the broken wires with Ctrl+B.
 
 image::cm_049.00_SelectWhileLoopToBeDeleted.png[]
-
-image::cm_050.00_InitializeWiredToConstantIO.png[] image::cm_051.00_Close-ErrorOutput-Wired2.png[]
+image::cm_050.00_InitializeWiredToConstantIO.png[]
+image::cm_051.00_Close-ErrorOutput-Wired2.png[]
 
 * Right-click to bring up the Functions Palette, hover over ‘Structures’
 then select ‘Event Structure.’ Place the Event Structure on the Block
@@ -358,11 +360,13 @@ Diagram.
 image::cm_052.00_RightClick-FunctionsPalette-Structures-EventStructure.png[]
 
 * Wire the Initialize VI and the Close VI through the Event Structure.
+
 image::cm_053.00_EventStructureWiredPassThroughInitializeAndClose.png[]
 
 * Add a new Event Case by Right-clicking on the Selector Label, and select
 ‘Add Event Case.’
-* image::cm_054.00_RightClick-AddEventCase.png[]
+
+image::cm_054.00_RightClick-AddEventCase.png[]
 
 * Add the WriteDO.vi by bringing up the Functions Palette, hover over
 ‘Instrument I/O’, ‘Instr Drivers,’ ‘HandsOnPi2040,’ and select
@@ -419,7 +423,8 @@ image::cm_064.00_EventStructureWired-ConstantDropDown-DO2(GPIO3).png[]
 clean it up. This will make it easier to use when you have finished
 building the program.
 
-image::cm_065.00_MessyFrontPanelWith4BooleansAndErrorOut.png[] image::cm_066.00_OrganizedFrontPanelWith4BooleansAndErrorOut.png[]
+image::cm_065.00_MessyFrontPanelWith4BooleansAndErrorOut.png[]
+image::cm_066.00_OrganizedFrontPanelWith4BooleansAndErrorOut.png[]
 
 
 _You will be able to Run the program now, however, it will Stop after one
@@ -496,7 +501,8 @@ it’s time to have a look at the Analog Inputs and Outputs.
 
 For this lesson you will be focusing on the Analog Inputs.
 
-image::cm_076.00_HandsOnEmulator-HighlightingAnalogInputs.png[] image::cm_077.00_PiCo-AnalogInput.png[]
+image::cm_076.00_HandsOnEmulator-HighlightingAnalogInputs.png[]
+image::cm_077.00_PiCo-AnalogInput.png[]
 
 * Like the lessons before, start with placing the Initialize.vi, and the
 Close.vi on a new Block Diagram.
@@ -513,7 +519,8 @@ image::cm_079.00_RightClick-Create-Constant_ReadAI.png[]
 
 * Create an Indicator for the Analog value on the right side of the vi.
 
-image::cm_080.00_RightClick-Create-Indicator_ReadAI.png[] image::cm_081.00_ReadAI_Wired.png[]
+image::cm_080.00_RightClick-Create-Indicator_ReadAI.png[]
+image::cm_081.00_ReadAI_Wired.png[]
 
 * Wire your program like the image below.
 
@@ -558,7 +565,7 @@ image::cm_087.00_FrontPanel-StopButton-ErrorOut-Chart.png[]
 
 === [#anchor-25]####Optional: Setting up the Pico Hardware (Analog Output)
 
-////TO DO Need to add links to the wiring documents ////
+//TO DO Need to add links to the wiring documents
 Wiring for Pico
 
 === [#anchor-26]####Optional: Setting up the Raxda Hardware (Analog Output)
@@ -624,7 +631,8 @@ _A logarithmic scale is useful when the data you are displaying is much less or 
 
 * The ‘Duty’ slider can stay as a Linear scale.
 
-image::cm_098.00_DutyScaleStaysLinear.png[] image::cm_099.00_FrequencySlideScaleLogarithmic.png[]
+image::cm_098.00_DutyScaleStaysLinear.png[]
+image::cm_099.00_FrequencySlideScaleLogarithmic.png[]
 
 * Now you need to set the top and bottom points on the sliders. You will only
 need to change the highest point for ‘Duty’. Set it to ‘1’.
@@ -729,7 +737,8 @@ and images to help identify what the VI does.
 ** The connector pane is a set of terminals on the icon the corresponds
 to the controls and indicators of the VI.
 
-image::cm_109.00_Icon.png[] image::cm_110.00_ConnectorPane.png[]
+image::cm_109.00_Icon.png[]
+image::cm_110.00_ConnectorPane.png[]
 
 === [#anchor-32]####Data Types
 
@@ -768,7 +777,7 @@ certain condition is met.
 
 
 image::cm_112.00_WhileLoop.png[]
-[arabic]
+
 . Iteration Terminal – the iteration terminal provides the current loop iteration.
 +
 . Conditional Terminal – Evaluates a Boolean input value at the end of each loop iteration, if the conditional terminal is met then the loop stops.
