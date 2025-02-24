@@ -77,7 +77,7 @@ on mouse).
 
 image::cm_009.00_ErrorList-1.png[]
 
-* Press Ctrl+space to bring up quick drop and Ctrl+W to wire the VIs
+* Press kbd:[Ctrl+Space] to bring up quick drop and kbd:[Ctrl+W] to wire the VIs
 together. Quick drop is an extremely useful productivity tool that ships
 with LabVIEW. It allows you to automate repetitive tasks with a few key
 combos.
@@ -356,7 +356,7 @@ a buttons and the corresponding light to turn on.
 
 * First lets delete the while loop and its contents. Click on the While
 Loop and press the delete key. Do the same for the ‘True’ constant. Then
-remove the broken wires with Ctrl+B.
+remove the broken wires with kbd:[Ctrl+B].
 
 image::cm_049.00_SelectWhileLoopToBeDeleted.png[]
 image::cm_050.00_InitializeWiredToConstantIO.png[]
