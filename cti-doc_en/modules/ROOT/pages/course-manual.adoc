@@ -175,7 +175,7 @@ But more importantly the LED on the hardware has turned on.
 image::cm_029.00_LED_Turns_ON.png[]
 
 == Lesson 2 – For Loops
-_(Optional)_
+NOTE: This lesson is optional.
 
 === Optional: Setting up the Pico Hardware
 
@@ -201,7 +201,7 @@ tool and drag them where you want with the mouse, or using the arrows.
 
 image::cm_031.00_SelectMoveAndDragWithMouse.png[]
 
-_Note: press Shift and an arrow key to move selected items quicker_.
+TIP: Press Shift and an arrow key to move selected items quicker.
 
 * Now insert a For Loop, to do this Right-click anywhere on the block
 diagram to bring up the functions palette. Select ‘Structures’ then ‘For
@@ -251,7 +251,7 @@ image::cm_039.00_DragTrueConstantOutsideForLoop-WireToShiftRegister.png[]
 •	Remember to wire it back into the SubVI.
 040.00_ForLoopWired-TrueFromShiftRegisterToWriteDO.png[]
 
-_If you were to run the program at this point the LED would light up, but would not ‘blink.’_
+_If you were to run the program at this point the LED would light up, but would not ‘blink.’
 
 * For a blinking LED you will need to invert the boolean value after every loop. To do this Right-click anywhere to bring up the functions palette. Hover over ‘Boolean’ then select the ‘Not’ Boolean. Wire this into the shift registers.
 
@@ -276,7 +276,7 @@ image::cm_043.00_ForLoopWired-Not.png[]
 the Digital Output.
 
 == Lesson 3 – While Loops
-_(Optional)_
+NOTE: This lesson is optional.
 
 === Optional: Setting up the Pico Hardware
 
@@ -436,8 +436,7 @@ image::cm_065.00_MessyFrontPanelWith4BooleansAndErrorOut.png[]
 image::cm_066.00_OrganizedFrontPanelWith4BooleansAndErrorOut.png[]
 
 
-_You will be able to Run the program now, however, it will Stop after one
-Boolean has been selected. We can make this more efficient_.
+NOTE: You will be able to Run the program now, however, it will Stop after one Boolean has been selected. We can make this more efficient.
 
 * Back on the Block Diagram we will need to add a While Loop. Right
 click to bring up the Functions Palette, hover over ‘Structures’ and
@@ -445,7 +444,7 @@ select ‘While Loop.’
 
 image::cm_067.00_RightClick-FunctionsPalette-Structures-WhileLoop.png[]
 
-*Place the While Loop around the Event Structure.
+* Place the While Loop around the Event Structure.
 
 image::cm_068.00_WhileLoopAroundEventStructure.png[]
 
@@ -538,7 +537,7 @@ image::cm_081.00_ReadAI_Wired.png[]
 image::cm_082.00_Initialize-ReadAI-Close-Wired.png[]
 
 _The program will successfully run at this point, however, it will
-execute too fast to move the Analog Sticks for continuous data_.
+execute too fast to move the Analog Sticks for continuous data.
 
 * To fix this issue, you can add a While Loop. Bring up the Functions
 Palette, then ‘Structures’, and select ‘While Loop’. Place this around
@@ -547,20 +546,21 @@ the ReadAIs.vi, but leave space for other functions.
 image::cm_083.00_RightClick-FunctionsPalette-Structures-WhileLoop2.png[]
 
 
-*A While Loop will not work without adding a Loop Condition. In most cases
+* A While Loop will not work without adding a Loop Condition. In most cases
 this will simply be a Stop Boolean. Right-click on the Loop Condition
 and ‘Create Control’.
 
 image::cm_084.00_RightClick-Create-Control.png[]
 image::cm_084.00_FrontPanel-StopButton-ErrorOut.png[]
 
-_This will automatically add a Stop Boolean onto the Front Panel_.
+NOTE: This will automatically add a Stop Boolean onto the Front Panel.
 
 * You can run the program now and when you turn the Analog Sticks the
 value will show.
 
 image::cm_085.00_TurnAnalogSticksValueShows.png[]
-_If you are using physical Pico Bread Board and Analog Board you will notice the ‘Value’ Indicator will flicker between numbers, this is normal and is simply extra ‘noise’ from the equipment_.
+
+NOTE: If you are using physical Pico Bread Board and Analog Board you will notice the ‘Value’ Indicator will flicker between numbers, this is normal and is simply extra ‘noise’ from the equipment.
 
 * However, it is also possible to replace this with a Chart which will
 show the data continuously.
@@ -626,7 +626,7 @@ image::cm_095.00_RightClick-Create-Control-DutyFrequency.png[]
 * The front panel should look like the image below. However, this needs some
 adjusting.
 
-_Using ‘Numeric Control’ may be a little fiddly when the program runs, so in this case you will swap these out for ‘Vertical Pointer Slides.’_
+NOTE: Using ‘Numeric Control’ may be a little fiddly when the program runs, so in this case you will swap these out for ‘Vertical Pointer Slides’.
 
 image::cm_096.00_RightClick-Replace-modern-Numeric-VerticalPointerSlide.png[]
 
@@ -639,7 +639,7 @@ on the Slider, select ‘Scale’, ‘Mapping’, then ‘Logarithmic.’
 
 image::cm_097.00_RightClick-Scale-Mapping-Logarithmic.png[]
 
-_A logarithmic scale is useful when the data you are displaying is much less or much more than the rest of the data, or when the percentage differences between values are important_.
+NOTE: A logarithmic scale is useful when the data you are displaying is much less or much more than the rest of the data, or when the percentage differences between values are important.
 
 * The ‘Duty’ slider can stay as a Linear scale.
 
@@ -652,7 +652,7 @@ need to change the highest point for ‘Duty’. Set it to ‘1’.
 * For ‘Frequency’ the lowest point should be ‘10’ and the highest
 ‘500,000.’
 
-_Now let’s head back to the Block Diagram and finish building the program_.
+NOTE: Now let’s head back to the Block Diagram and finish building the program.
 
 * Bring up the Functions Palette by Right-clicking on the Block Diagram, hover
 over ‘Structures’ and select a For Loop. Place the For Loop around the
@@ -712,7 +712,7 @@ image::cm_106.00_Intialize-WriteAO-ReadAO-Close-WithForLoop-Wired.png[]
 
 image::cm_107.00_Duty-Frequency-Outputs-Updated-on-FrontPanel.png[]
 
-_If you are using the Simulator the values for both will appear on the Emulator_.
+NOTE: If you are using the Simulator the values for both will appear on the Emulator.
 
 image::cm_108.00_HandsOnEmulator-Updating-PWMDuty-PWMFreq.png[]
 
@@ -779,7 +779,7 @@ array of that datatype.
 
 image::cm_111.00_DataTypes.png[]
 
-_Note: Right-click on a data type terminal and select ‘View as Icon’ depending on your preference. (The 2^nd row shows the terminals as icons.)_
+NOTE: Right-click on a data type terminal and select `View as Icon` depending on your preference. The 2^nd^ row shows the terminals as icons.
 
 === While Loops
 
