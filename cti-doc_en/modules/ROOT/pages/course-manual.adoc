@@ -174,19 +174,19 @@ image::cm_028.00_IDN_ReturnData_Displayed.png[]
 But more importantly the LED on the hardware has turned on.
 image::cm_029.00_LED_Turns_ON.png[]
 
-== [#anchor-4]##**Lesson 2 – **For Loops
+== **Lesson 2 – **For Loops
 _(Optional)_
 
-=== [#anchor-5]####Optional: Setting up the Pico Hardware
+=== Optional: Setting up the Pico Hardware
 
 //TO DO Need to add links to the wiring documents
 Wiring for Pico
 
-=== [#anchor-6]####Optional: Setting up the Raxda Hardware
+=== Optional: Setting up the Raxda Hardware
 Wiring for Raxda
 //TO DO Need to add links to the wiring documents
 
-=== [#anchor-7]####Lesson Instructions
+=== Lesson Instructions
 A For Loop executes a sub-diagram a set number of times. In this case
 you will learn how to build a program that will blink the previous LED
 on and off 10 times each and then stop.
@@ -275,20 +275,20 @@ image::cm_043.00_ForLoopWired-Not.png[]
 * Now Run the program. You have successfully used a For Loop to blink
 the Digital Output.
 
-== [#anchor-8]####Lesson 3 – While Loops
+== Lesson 3 – While Loops
 _(Optional)_
 
-=== [#anchor-9]####Optional: Setting up the Pico Hardware
+=== Optional: Setting up the Pico Hardware
 
 //TO DO Need to add links to the wiring documents
 Wiring for Pico
 
-=== [#anchor-10]####Optional: Setting up the Raxda Hardware
+=== Optional: Setting up the Raxda Hardware
 Wiring for Raxda
 //TO DO Need to add links to the wiring documents
 
 
-=== [#anchor-11]####Lesson Instructions
+=== Lesson Instructions
 
 The While Loop executes the sub-diagram until a specific condition
 occurs. It will always execute at least one time.
@@ -321,14 +321,14 @@ running then the Loop will end and the ‘blinking’ LED will stop.
 
 image::cm_047.00_WhileLoopWired-BooleanSwitchWiredToStopTerminal.png
 
-=== [#anchor-12]####Exercise – Use DI to stop the loop
-=== [#anchor-13]####Optional: Setting up the Pico Hardware
+=== Exercise – Use DI to stop the loop
+=== Optional: Setting up the Pico Hardware
 
 
 //TO DO Need to add links to the wiring documents
 Wiring for Pico
 
-=== [#anchor-14]####Optional: Setting up the Raxda Hardware
+=== Optional: Setting up the Raxda Hardware
 Wiring for Raxda
 //TO DO Need to add links to the wiring documents 
 
@@ -336,19 +336,19 @@ Hint: wiring diagram for DI
 
 image::cm_048.00_HandsOnPi20240_ReadDI.png[]
 
-== [#anchor-15]####Lesson 4 – Event Structure
+== Lesson 4 – Event Structure
 
-=== [#anchor-16]####Optional: Setting up the Pico Hardware
+=== Optional: Setting up the Pico Hardware
 
 
 //TO DO Need to add links to the wiring documents
 Wiring for Pico
 
-=== [#anchor-17]####Optional: Setting up the Raxda Hardware
+=== Optional: Setting up the Raxda Hardware
 Wiring for Raxda
 //TO DO Need to add links to the wiring documents
 
-=== [#anchor-18]####Lesson Instructions
+=== Lesson Instructions
 
 An Event Structure waits until a certain event occurs, then executes the
 appropriate case to handle that event. In this example, we want to press
@@ -490,22 +490,22 @@ the execution of the program.
 
 == 
 
-== [#anchor-19]####Lesson 5 – Numbers, Graphs and Charts
+== Lesson 5 – Numbers, Graphs and Charts
 
-=== [#anchor-20]####Optional: Setting up the Pico Hardware (Analog input)
+=== Optional: Setting up the Pico Hardware (Analog input)
 
 
 //TO DO Need to add links to the wiring documents
 Wiring for Pico
 
-=== [#anchor-21]####Optional: Setting up the Raxda Hardware
+=== Optional: Setting up the Raxda Hardware
 Wiring for Raxda
 //TO DO Need to add links to the wiring documents
 
 
-=== [#anchor-22]####Lesson Instructions
+=== Lesson Instructions
 
-==== [#anchor-23]####Analog Input
+==== Analog Input
 
 Now you have made working programs using Digital Inputs and Outputs,
 it’s time to have a look at the Analog Inputs and Outputs.
@@ -572,14 +572,14 @@ the Control Palette. Select Graph and then a Waveform Chart.
 
 image::cm_087.00_FrontPanel-StopButton-ErrorOut-Chart.png[]
 
-==== [#anchor-24]####Analog Output (Write)
+==== Analog Output (Write)
 
-=== [#anchor-25]####Optional: Setting up the Pico Hardware (Analog Output)
+=== Optional: Setting up the Pico Hardware (Analog Output)
 
 //TO DO Need to add links to the wiring documents
 Wiring for Pico
 
-=== [#anchor-26]####Optional: Setting up the Raxda Hardware (Analog Output)
+=== Optional: Setting up the Raxda Hardware (Analog Output)
 Wiring for Raxda
 //TO DO Need to add links to the wiring documents
 
@@ -682,14 +682,14 @@ and you will be results will show on the Emulator.
 
 image::cm_104.00_MovingSliders-HandsOnEmulatorDisplaysMovement.png[]
 
-==== [#anchor-27]####Analog Output (Read)
+==== Analog Output (Read)
 
-=== [#anchor-28]####Optional: Setting up the Pico Hardware (Read)
+=== Optional: Setting up the Pico Hardware (Read)
 
 //TO DO Need to add links to the wiring documents
 Wiring for Pico
 
-=== [#anchor-29]####Optional: Setting up the Raxda Hardware (Read)
+=== Optional: Setting up the Raxda Hardware (Read)
 Wiring for Raxda
 //TO DO Need to add links to the wiring documents
 
@@ -716,9 +716,9 @@ _If you are using the Simulator the values for both will appear on the Emulator_
 
 image::cm_108.00_HandsOnEmulator-Updating-PWMDuty-PWMFreq.png[]
 
-== [#anchor-30]####General Concepts
+== General Concepts
 
-=== [#anchor-31]####VIs (Virtual Instruments)
+=== VIs (Virtual Instruments)
 
 Programs in LabVIEW are called VIs (Virtual Instruments). In other
 programming languages a VI is similar to a function or a subroutine. A
@@ -753,7 +753,7 @@ to the controls and indicators of the VI.
 image::cm_109.00_Icon.png[]
 image::cm_110.00_ConnectorPane.png[]
 
-=== [#anchor-32]####Data Types
+=== Data Types
 
 Each variable in a program must have a data type. The data types
 determines what type of value the variable will hold.
@@ -783,7 +783,7 @@ image::cm_111.00_DataTypes.png[]
 
 _Note: Right-click on a data type terminal and select ‘View as Icon’ depending on your preference. (The 2^nd row shows the terminals as icons.)_
 
-=== [#anchor-33]####While Loops
+=== While Loops
 
 While Loops allow portions of a program to execute repeatedly until a
 certain condition is met.
@@ -796,7 +796,7 @@ image::cm_112.00_WhileLoop.png[]
 . Conditional Terminal – Evaluates a Boolean input value at the end of each loop iteration, if the conditional terminal is met then the loop stops.
 
 
-=== [#anchor-34]####For Loops
+=== For Loops
 
 A For Loop executes a sub-diagram a certain number of times. This value
 is wired to the Count Terminal (N).
@@ -809,7 +809,7 @@ image::cm_113.00_ForLoop.png[]
 . Count Terminal – Specifies the number of times to execute the code
 inside the For Loop.
 
-=== [#anchor-35]####Event Structures
+=== Event Structures
 
 An Event Structure waits until an event occurs, then executes the
 appropriate case to handle that event.
