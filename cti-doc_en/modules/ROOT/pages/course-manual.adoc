@@ -69,7 +69,7 @@ as shown below.
 
 image::cm_008.00_DrangAndDrop-Initialize-WriteDO-Close.png[]
 
-NOTE: The Run-arrow is broken (the run arrow appears in the top left corner), if you press it, it will list all the reasons why it’s broken.
+NOTE: The Run-arrow is broken (the run arrow appears in the top left corner), if you press it, it will list all the reasons why it`s broken.
 
 * LabVIEW will not let you run the source-code until these errors are
 sorted. Close the Error List and select all of the Vis. (Left-click drag
@@ -102,34 +102,34 @@ issue left.
 
 image::cm_012.00_Ctrl-H_HandsOnPi20240_WriteDO.png[]
 
-This VI needs its Output and DO Value (True) wiring. So let’s create
+This VI needs its Output and DO Value (True) wiring. So let`s create
 constants for them. Use the arrow on the right to select an output.
 
 image::cm_013.00_ArrowPointingToConstantDropDown-WriteDO.png[]
 image::cm_014.00_WriteDO_DO1(GPIO2).png[]
 
-It’s nice to have the constant label shown for booleans.
+It`s nice to have the constant label shown for booleans.
 
-* Right-click on the ‘True’ Boolean Constant. This will bring up a drop
-down window, hover over ‘Visible Items’ and select ‘Label’.
+* Right-click on the `True` Boolean Constant. This will bring up a drop
+down window, hover over `Visible Items` and select `Label`.
 
 image::cm_015.00_RightClick-VisibleItems-Label.png[]
 image::cm_016.00_WriteDO_TrueConstant_Labeled.png[]
 
-We will also need to create a Constant for the VISA Reference Terminal. Like before, Right-click the ‘VISA Resource Name’ tip strip and create a Constant
+We will also need to create a Constant for the VISA Reference Terminal. Like before, Right-click the `VISA Resource Name` tip strip and create a Constant
 
 image::cm_017.00_RightClick-Create-Constant_Initialize.png[]
 image::cm_018.00_Initialize-IOconstantWired.png[]
 
 Constants are terminals on the block diagram that supply fixed data
-values to the diagram. We’ll discuss data types etc. later in the
+values to the diagram. We`ll discuss data types etc. later in the
 session.
 
-* Finally let’s wire in a couple of outputs.
+* Finally let`s wire in a couple of outputs.
 
-* Right-click on IDN for Initialize.vi and select ‘Create Indicator’.
+* Right-click on IDN for Initialize.vi and select `Create Indicator`.
 Then we need an error out, so Right-click at the bottom the Close.vi and
-select ‘Create Indicator’.
+select `Create Indicator`.
 
 image::cm_019.00_RightClick-Create-Indicator_Initialize.png[]
 image::cm_022.00_Initialize-IdentityOutputIndicatorWired.png[]
@@ -139,12 +139,12 @@ image::cm_021.00_Close-ErrorOutput-Wired.png[]
 
 image::cm_023.00_Identity-ErrorOut-Indicators-on-FrontPanel.png[]
 
-Notice how the Indicators appear on the Front Panel. We’ll discuss
+Notice how the Indicators appear on the Front Panel. We`ll discuss
 block-diagrams and front panels in a bit.
 
 Now we have a running program!
 
-However, you will notice the we’ll have an error.
+However, you will notice the we`ll have an error.
 
 image::cm_024.00_Identity-ErrorOut-Indicators-Error-on-First-Run.png[]
  
@@ -157,9 +157,9 @@ In this case it is!
 
 image::cm_026.00_Error-1073807346-Explained.png[]
 
-* The VIs don’t know who they are talking to. To fix this, hardware
-users need to set the correct VISA reference from the ‘VISA’ drop down
-box.. For Emulator users click the ‘Copy’ button, as seen in the image
+* The VIs don`t know who they are talking to. To fix this, hardware
+users need to set the correct VISA reference from the `VISA` drop down
+box.. For Emulator users click the `Copy` button, as seen in the image
 below and paste the reference in, if you have hardware refresh and
 select the ASRL reference.
 
@@ -204,8 +204,8 @@ image::cm_031.00_SelectMoveAndDragWithMouse.png[]
 TIP: Press Shift and an arrow key to move selected items quicker.
 
 * Now insert a For Loop, to do this Right-click anywhere on the block
-diagram to bring up the functions palette. Select ‘Structures’ then ‘For
-Loop’.
+diagram to bring up the functions palette. Select `Structures` then `For
+Loop`.
 
 image::cm_032.00_RightClick-FunctionsPalette-Structures-ForLoop.png[]
 
@@ -214,23 +214,23 @@ the constants attached to it.)
 
 image::cm_033.00_PlaceForLoopArroundWriteDO.png[]
 
-* Once the For Loop has been placed, you will see an ‘N’ in the top left
+* Once the For Loop has been placed, you will see an `N` in the top left
 corner, this is the loop count (or how many times the loop will
 execute.)
 
 * Right-click on the left hand side of the Loop Count, and select
-‘Create a Constant’. For this task you will need the Loop Count to be 20
+`Create a Constant`. For this task you will need the Loop Count to be 20
 (10 times on and 10 times off.)
 
 image::cm_034.00_RightClick-Create-Constant_TerminalN_ForLoop.png[]
 image::cm_035.00_ForLoopWired-20N.png[]
 
-In order for the program to ‘blink’ successfully it will need to know
+In order for the program to `blink` successfully it will need to know
 what the previous loop has executed, therefore you will need a Shift
 Register.
 
-* Right-click on the edge of the For Loop and select ‘Add Shift
-Register.’ Wire the True Constant to the Shift Registers and the DO
+* Right-click on the edge of the For Loop and select `Add Shift
+Register.` Wire the True Constant to the Shift Registers and the DO
 (Value) wire terminal.
 
 
@@ -239,7 +239,7 @@ image::cm_037.00_ForLoopWiredIncludingShiftRegister.png[]
 
 * For a blinking LED you will need to invert the boolean value after
 every loop. To do this Right-click anywhere to bring up the functions
-palette. Hover over ‘Boolean’ then select the ‘Not’ Boolean. Wire this
+palette. Hover over `Boolean` then select the `Not` Boolean. Wire this
 into the shift registers.
 
 * Double click the green wire connecting the True Constant to the SubVI and delete it. Move the True Constant outside the For Loop. Wire the Constant through the For Loop and into the Shift Registers.
@@ -251,9 +251,9 @@ image::cm_039.00_DragTrueConstantOutsideForLoop-WireToShiftRegister.png[]
 •	Remember to wire it back into the SubVI.
 040.00_ForLoopWired-TrueFromShiftRegisterToWriteDO.png[]
 
-_If you were to run the program at this point the LED would light up, but would not ‘blink.’
+_If you were to run the program at this point the LED would light up, but would not `blink.`
 
-* For a blinking LED you will need to invert the boolean value after every loop. To do this Right-click anywhere to bring up the functions palette. Hover over ‘Boolean’ then select the ‘Not’ Boolean. Wire this into the shift registers.
+* For a blinking LED you will need to invert the boolean value after every loop. To do this Right-click anywhere to bring up the functions palette. Hover over `Boolean` then select the `Not` Boolean. Wire this into the shift registers.
 
 image::cm_041.00_RightClick-FunctionsPalette-Boolean-Not.png[]
 
@@ -261,12 +261,12 @@ The program will now work! However, it will execute very fast, and you
 will not be able to see the LED blinking. So you need to slow the Loop
 down.
 
-* Right-click inside the For Loop, hover over ‘Timing.’ There will see
-many different timing options. For this you will use the ‘Wait’
+* Right-click inside the For Loop, hover over `Timing.` There will see
+many different timing options. For this you will use the `Wait`
 function. Select and place inside the Loop.
 
-* Create a constant by Right-clicking on the left side of the ‘Wait’
-function. The ‘Wait’ function executes in milliseconds, therefore to
+* Create a constant by Right-clicking on the left side of the `Wait`
+function. The `Wait` function executes in milliseconds, therefore to
 slow down the Loop by 5 seconds, write 500.
 
 image::cm_042.00_RightClick-FunctionsPalette-Timing-Wait(ms).png[]
@@ -294,11 +294,11 @@ The While Loop executes the sub-diagram until a specific condition
 occurs. It will always execute at least one time.
 
 In this case, you want the LED to continually blink on and off until a
-‘Stop’ button is pressed. You can create this using the previously built
+`Stop` button is pressed. You can create this using the previously built
 program with the For Loop.
 
-* Firstly, Right-click on the edge of the For Loop, and select ‘Replace
-with While Loop’
+* Firstly, Right-click on the edge of the For Loop, and select `Replace
+with While Loop`
 
 image::cm_044.00_RightClick-ReplaceWithWhileLoop.png[]
 
@@ -307,17 +307,17 @@ This is not needed for a While Loop and can be deleted.
 
 image::cm_045.00_20ConstantCanBeDeleted.png[]
 
-* To add a ‘Stop’ boolean, switch to the front panel window and right
+* To add a `Stop` boolean, switch to the front panel window and right
 click where you want to place the button. The Controls palette will
-appear, select ‘Boolean’ and pick a button. The example uses a ‘Push
-Button’ but any will work.
+appear, select `Boolean` and pick a button. The example uses a `Push
+Button` but any will work.
 
 image::cm_046.00_RightClick-ControlsPalette-Boolean-PushButton.png[]
 
 * Back on the Block Diagram move the new Control Boolean into the While
 Loop and wire it up to the Conditional Terminal in the bottom right
 corner. If the Button on the Front Panel is pressed when the program is
-running then the Loop will end and the ‘blinking’ LED will stop.
+running then the Loop will end and the `blinking` LED will stop.
 
 image::cm_047.00_WhileLoopWired-BooleanSwitchWiredToStopTerminal.png
 
@@ -355,15 +355,15 @@ appropriate case to handle that event. In this example, we want to press
 a buttons and the corresponding light to turn on.
 
 * First lets delete the while loop and its contents. Click on the While
-Loop and press the delete key. Do the same for the ‘True’ constant. Then
+Loop and press the delete key. Do the same for the `True` constant. Then
 remove the broken wires with kbd:[Ctrl+B].
 
 image::cm_049.00_SelectWhileLoopToBeDeleted.png[]
 image::cm_050.00_InitializeWiredToConstantIO.png[]
 image::cm_051.00_Close-ErrorOutput-Wired2.png[]
 
-* Right-click to bring up the Functions Palette, hover over ‘Structures’
-then select ‘Event Structure.’ Place the Event Structure on the Block
+* Right-click to bring up the Functions Palette, hover over `Structures`
+then select `Event Structure.` Place the Event Structure on the Block
 Diagram.
 
 image::cm_052.00_RightClick-FunctionsPalette-Structures-EventStructure.png[]
@@ -373,13 +373,13 @@ image::cm_052.00_RightClick-FunctionsPalette-Structures-EventStructure.png[]
 image::cm_053.00_EventStructureWiredPassThroughInitializeAndClose.png[]
 
 * Add a new Event Case by Right-clicking on the Selector Label, and select
-‘Add Event Case.’
+`Add Event Case.`
 
 image::cm_054.00_RightClick-AddEventCase.png[]
 
 * Add the WriteDO.vi by bringing up the Functions Palette, hover over
-‘Instrument I/O’, ‘Instr Drivers,’ ‘HandsOnPi2040,’ and select
-‘WriteDO.vi.
+`Instrument I/O`, `Instr Drivers,` `HandsOnPi2040,` and select
+`WriteDO.vi.
 
 image::cm_055.00_RightClick-FunctionsPalette-InstrumentIO-InstrDrivers-HandsOnPi2040-WriteDO.png[]
 
@@ -388,41 +388,41 @@ the Output terminal and create a Constant.
 
 image::cm_056.00_DragWriteDOInsideEvent-RightClick-CreateConstant.png[]
 
-* Change the Output from ‘No DO – Error’ to ‘DO1’ by clicking the drop down arrow
+* Change the Output from `No DO – Error` to `DO1` by clicking the drop down arrow
 on the Output Constant.
 
 image::cm_057.00_EventStructureWired-ConstantDropDown-DO1(GPIO2).png[]
 
 * Next we need to add a button for the Digital Output. Go to the Front
 Panel, and Right-click anywhere to bring up the Controls Palette. Hover
-over ‘Boolean,’ and select ‘Push Button’
+over `Boolean,` and select `Push Button`
 
 image::cm_058.00_RightClick-ControlsPalette-Boolean-PushButton2.png[]
 
-* Wire the new Boolean Control into the ‘DO Value’ terminal.
+* Wire the new Boolean Control into the `DO Value` terminal.
 
 image::cm_059.00_EventStructureWired-BooleanControlTerminalWiredToWriteDO.png[]
 
-* Right-click on the Label Selector as we need to ‘Edit Events Handled
-by This Case.’
+* Right-click on the Label Selector as we need to `Edit Events Handled
+by This Case.`
 
 image::cm_060.00_RightClick-EditEventsHandledByThisCase.png[]
 
-* This will bring up the ‘Edit Events’ window. Select ‘Boolean.’
+* This will bring up the `Edit Events` window. Select `Boolean.`
 
 image::cm_061.00_EventStructure-EditEventsWindow-Select-Boolean.png[]
 
 * This Event Case is now complete. We will need 3 more Event Cases, each
 one corresponding to a LED. The easiest way to do this is to Right-click
-the Label Selector, and select ‘Duplicate Event Case.’
+the Label Selector, and select `Duplicate Event Case.`
 
 image::cm_062.00_RightClick-DuplicateEventCase.png[]
 
-* Select ‘Boolean 2’ on the Edit Events window.
+* Select `Boolean 2` on the Edit Events window.
 
 image::cm_063.00_EventStructure-EditEventsWindow-Select-Boolean2.png[]
 
-* It’s important to change the DO Constant when the case has been
+* It`s important to change the DO Constant when the case has been
 duplicated. (DO1 for Boolean, DO2 for Boolean 2, etc.) Duplicate this
 case 2 more times for DO3, and DO4.
 
@@ -439,8 +439,8 @@ image::cm_066.00_OrganizedFrontPanelWith4BooleansAndErrorOut.png[]
 NOTE: You will be able to Run the program now, however, it will Stop after one Boolean has been selected. We can make this more efficient.
 
 * Back on the Block Diagram we will need to add a While Loop. Right
-click to bring up the Functions Palette, hover over ‘Structures’ and
-select ‘While Loop.’
+click to bring up the Functions Palette, hover over `Structures` and
+select `While Loop.`
 
 image::cm_067.00_RightClick-FunctionsPalette-Structures-WhileLoop.png[]
 
@@ -448,33 +448,33 @@ image::cm_067.00_RightClick-FunctionsPalette-Structures-WhileLoop.png[]
 
 image::cm_068.00_WhileLoopAroundEventStructure.png[]
 
-* Go to the Front Panel, so we can add a ‘Stop’ button that we’ll
+* Go to the Front Panel, so we can add a `Stop` button that we`ll
 connect to the Loop Condition. Right-click to bring up the Controls
-Palette, hover over ‘Boolean, then select ‘Stop Button.’
+Palette, hover over `Boolean, then select `Stop Button.`
 
 image::cm_069.00_RightClick-ControlsPalette-Boolean-StopButton.png[]
 
 * We will also need to create a new Event Case for this Stop button. Right
-click on the Selector Label and select ‘Add Event Case.’
+click on the Selector Label and select `Add Event Case.`
 
 image::cm_070.00_RightClick-AddEventCase-ForStopButton.png[]
 
-* Place the ‘Stop’ control inside the new case.
+* Place the `Stop` control inside the new case.
 
 image::cm_071.00_EventStructureWired-StopButtonInsideEventCase.png[]
 
-* Right-click the Selector Label and select ‘Edit Events Handled by This Case’
+* Right-click the Selector Label and select `Edit Events Handled by This Case`
 
 image::cm_072.00_RightClick-EditEventsHandledByThisCase-StopButton.png[]
 
-* When the ‘Edit Events’ window pops up choose the ‘stop’ option in the
-‘Event Sources’ table.
+* When the `Edit Events` window pops up choose the `stop` option in the
+`Event Sources` table.
 
 image::cm_073.00_EventStructure-EditEventsWindow-Select-Stop.png[]
 
-* Our last step is to wire a ‘True’ constant to the Loop condition. Right
-click to bring up the Functions Palette, hover over ‘Boolean’ and select
-‘True Constant.’
+* Our last step is to wire a `True` constant to the Loop condition. Right
+click to bring up the Functions Palette, hover over `Boolean` and select
+`True Constant.`
 * Place the Constant inside the Event Structure.
 
 image::cm_074.00_RightClick-FunctionsPalette-Boolean-TrueConstant.png[]
@@ -507,7 +507,7 @@ Wiring for Raxda
 ==== Analog Input
 
 Now you have made working programs using Digital Inputs and Outputs,
-it’s time to have a look at the Analog Inputs and Outputs.
+it`s time to have a look at the Analog Inputs and Outputs.
 
 For this lesson you will be focusing on the Analog Inputs.
 
@@ -540,7 +540,7 @@ _The program will successfully run at this point, however, it will
 execute too fast to move the Analog Sticks for continuous data.
 
 * To fix this issue, you can add a While Loop. Bring up the Functions
-Palette, then ‘Structures’, and select ‘While Loop’. Place this around
+Palette, then `Structures`, and select `While Loop`. Place this around
 the ReadAIs.vi, but leave space for other functions.
 
 image::cm_083.00_RightClick-FunctionsPalette-Structures-WhileLoop2.png[]
@@ -548,7 +548,7 @@ image::cm_083.00_RightClick-FunctionsPalette-Structures-WhileLoop2.png[]
 
 * A While Loop will not work without adding a Loop Condition. In most cases
 this will simply be a Stop Boolean. Right-click on the Loop Condition
-and ‘Create Control’.
+and `Create Control`.
 
 image::cm_084.00_RightClick-Create-Control.png[]
 image::cm_084.00_FrontPanel-StopButton-ErrorOut.png[]
@@ -560,7 +560,7 @@ value will show.
 
 image::cm_085.00_TurnAnalogSticksValueShows.png[]
 
-NOTE: If you are using physical Pico Bread Board and Analog Board you will notice the ‘Value’ Indicator will flicker between numbers, this is normal and is simply extra ‘noise’ from the equipment.
+NOTE: If you are using physical Pico Bread Board and Analog Board you will notice the `Value` Indicator will flicker between numbers, this is normal and is simply extra `noise` from the equipment.
 
 * However, it is also possible to replace this with a Chart which will
 show the data continuously.
@@ -590,7 +590,7 @@ add the WriteAO.vi onto the diagram.
 image::cm_088.00_RightClick-FunctionsPalette-InstrumentIO-InstrDrivers-HandsOnPi2040-WriteAO.png[]
 
 * Wire up the 3 VIs.
-* Right-click on the ‘Analog Output’ terminal and Create a Constant. 
+* Right-click on the `Analog Output` terminal and Create a Constant. 
 
 image::cm_089.00_RightClick-Create-Constant_WriteAO.png[]
 
@@ -599,8 +599,8 @@ image::cm_089.00_RightClick-Create-Constant_WriteAO.png[]
 image::cm_090.00_WriteAO-Wired.png[]
 
 * You will need to create a Bundle. Right-click on the Block Diagram to
-bring up the Functions palette, hover over ‘Cluster, Class, & Variant,
-then select ‘Bundle By Name.’
+bring up the Functions palette, hover over `Cluster, Class, & Variant,
+then select `Bundle By Name.`
 
 image::cm_091.00_RightClick-FunctionsPalette-ClusterClassAndVariant-BundleByName.png[]
 
@@ -613,66 +613,66 @@ image::cm_092.00_SelectWireFromClusterToWriteAO-ToBeDeleted.png[]
 
 image::cm_093.00_Initialize-WriteAO-Close-withBundleDutyWired.png[]
 
-* Once wired up, you will notice that the bundle has the label ‘Duty’. Expand the Bundle
-down so the ‘Frequency’ label is visible.
+* Once wired up, you will notice that the bundle has the label `Duty`. Expand the Bundle
+down so the `Frequency` label is visible.
 
 image::cm_094.00_DragAndExpandBundleByName-Duty-Frequency.png[]
 
-* Right-click at the edge of the bundle and create Constants for ‘Duty’
-and ‘Frequency.’
+* Right-click at the edge of the bundle and create Constants for `Duty`
+and `Frequency.`
 
 image::cm_095.00_RightClick-Create-Control-DutyFrequency.png[]
 
 * The front panel should look like the image below. However, this needs some
 adjusting.
 
-NOTE: Using ‘Numeric Control’ may be a little fiddly when the program runs, so in this case you will swap these out for ‘Vertical Pointer Slides’.
+NOTE: Using `Numeric Control` may be a little fiddly when the program runs, so in this case you will swap these out for `Vertical Pointer Slides`.
 
 image::cm_096.00_RightClick-Replace-modern-Numeric-VerticalPointerSlide.png[]
 
-* Right-click on the ‘Duty’ Control and hover over ‘Replace.’ Select ‘Numeric’
-and then ‘Vertical Pointer Slide.’ Do the same for the ‘Frequency’
+* Right-click on the `Duty` Control and hover over `Replace.` Select `Numeric`
+and then `Vertical Pointer Slide.` Do the same for the `Frequency`
 Control.
 
-* You will need to change the ‘Scale’ of the ‘Frequency’ slider. Right-click
-on the Slider, select ‘Scale’, ‘Mapping’, then ‘Logarithmic.’
+* You will need to change the `Scale` of the `Frequency` slider. Right-click
+on the Slider, select `Scale`, `Mapping`, then `Logarithmic.`
 
 image::cm_097.00_RightClick-Scale-Mapping-Logarithmic.png[]
 
 NOTE: A logarithmic scale is useful when the data you are displaying is much less or much more than the rest of the data, or when the percentage differences between values are important.
 
-* The ‘Duty’ slider can stay as a Linear scale.
+* The `Duty` slider can stay as a Linear scale.
 
 image::cm_098.00_DutyScaleStaysLinear.png[]
 image::cm_099.00_FrequencySlideScaleLogarithmic.png[]
 
 * Now you need to set the top and bottom points on the sliders. You will only
-need to change the highest point for ‘Duty’. Set it to ‘1’.
+need to change the highest point for `Duty`. Set it to `1`.
 
-* For ‘Frequency’ the lowest point should be ‘10’ and the highest
-‘500,000.’
+* For `Frequency` the lowest point should be `10` and the highest
+`500,000.`
 
-NOTE: Now let’s head back to the Block Diagram and finish building the program.
+NOTE: Now let`s head back to the Block Diagram and finish building the program.
 
 * Bring up the Functions Palette by Right-clicking on the Block Diagram, hover
-over ‘Structures’ and select a For Loop. Place the For Loop around the
+over `Structures` and select a For Loop. Place the For Loop around the
 WriteAO.vi.
 
 image::cm_100.00_RightClick-FunctionsPalette-Structures-ForLoop2.png[]
 
-* A For Loop needs a ‘Loop Count.’ Choose a number that will allow you
+* A For Loop needs a `Loop Count.` Choose a number that will allow you
 to time to use the dials and see how it executes on the Waveform Chart.
 
 image::cm_101.00_ForLoopWired-500N.png[]
 
 * You will need to slow down the Program before running it. Bring up the
-Functions Palette, select ‘Timing’ and place the ‘Wait (ms)’ function
+Functions Palette, select `Timing` and place the `Wait (ms)` function
 inside the For Loop.
 
 image::cm_102.00_RightClick-FunctionsPalette-Timing-Wait(ms).png[]
 
 * Right-click the left hand terminal on the Wait function and create a Constant.
-Type in ‘100’ this will slow the program down enough for you to see the
+Type in `100` this will slow the program down enough for you to see the
 results.
 
 image::cm_103.00_Wait(ms)Wiired100Constant.png[]
@@ -693,22 +693,22 @@ Wiring for Pico
 Wiring for Raxda
 //TO DO Need to add links to the wiring documents
 
-If you want a more accurate representation for the ‘Duty’ and
-‘Frequency’ sliders you can use the ReadAOs.vi.
+If you want a more accurate representation for the `Duty` and
+`Frequency` sliders you can use the ReadAOs.vi.
 
 Place the ReadAOs.vi inside the For Loop by repeat the same process you
 learnt at the beginning of the Analog Output (Write) lesson.
 
 image::cm_105.00_RightClick-FunctionsPalette-InstrumentIO-InstrDrivers-HandsOnPi2040-ReadAO.png[]
 
-* Wire the subVI as show in the image below. Right-click on the ‘AnalogOutput’
+* Wire the subVI as show in the image below. Right-click on the `AnalogOutput`
 terminal and create a Constant, then create an Indicator for the
-‘AnOutValues.’
+`AnOutValues.`
 
 image::cm_106.00_Intialize-WriteAO-ReadAO-Close-WithForLoop-Wired.png[]
 
-* You can now run the program, and you will see the Values for ‘Duty’ and
-‘Frequency’ on the Front Panel.
+* You can now run the program, and you will see the Values for `Duty` and
+`Frequency` on the Front Panel.
 
 image::cm_107.00_Duty-Frequency-Outputs-Updated-on-FrontPanel.png[]
 
