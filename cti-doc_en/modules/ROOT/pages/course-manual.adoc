@@ -174,7 +174,7 @@ image::cm_028.00_IDN_ReturnData_Displayed.png[]
 But more importantly the LED on the hardware has turned on.
 image::cm_029.00_LED_Turns_ON.png[]
 
-== **Lesson 2 – **For Loops
+== Lesson 2 – For Loops
 _(Optional)_
 
 === Optional: Setting up the Pico Hardware
@@ -725,32 +725,30 @@ programming languages a VI is similar to a function or a subroutine. A
 VI includes a Front Panel and a Block Diagram, the VIs Icon and its
 Connector Pane.
 
-* Front Panel
-+
+Front Panel::
 The front panel window is the user interface for the VI. You create the
 window with controls and indicators, these are the interactive input and
 output terminals of the VI.
-+
-* Block Diagram
-+
-The Block Diagram is where you will create the code for your program.
+
+Block Diagram:: The Block Diagram is where you will create the code for your program.
 The block diagram will implement graphical representations of functions
 to control the objects on the front panel. Objects on the front panel
 will appear as terminals on the block diagram.
-+
-* Icons, Connector Panes, and SubVIs
-+
-The icon and connector pane allow you to use and view the VI in another
+
+Icons, Connector Panes, and SubVIs:: The icon and connector pane allow you to use and view the VI in another
 VI. This is called a SubVI, to use a SubVI you must build a connector
 pane. Customising the Icon is recommended to help with reading and
 understanding the program.
-** The Icon is displayed in the upper right corner of the VI, it is a
+The Icon is displayed in the upper right corner of the VI, it is a
 graphical representation of the VI. The icon can be customised with text
 and images to help identify what the VI does.
-** The connector pane is a set of terminals on the icon the corresponds
+The connector pane is a set of terminals on the icon the corresponds
 to the controls and indicators of the VI.
 
+.The default VI icon
 image::cm_109.00_Icon.png[]
+
+.The default connector pane
 image::cm_110.00_ConnectorPane.png[]
 
 === Data Types
@@ -792,7 +790,6 @@ certain condition is met.
 image::cm_112.00_WhileLoop.png[]
 
 . Iteration Terminal – the iteration terminal provides the current loop iteration.
-+
 . Conditional Terminal – Evaluates a Boolean input value at the end of each loop iteration, if the conditional terminal is met then the loop stops.
 
 
@@ -803,9 +800,7 @@ is wired to the Count Terminal (N).
 
 image::cm_113.00_ForLoop.png[]
 
-[arabic]
 . Iteration Loop – Indicates the number of completed iterations.
-+
 . Count Terminal – Specifies the number of times to execute the code
 inside the For Loop.
 
@@ -816,13 +811,9 @@ appropriate case to handle that event.
 
 image::cm_114.00_EventStructure.png[]
 
-[arabic]
 . The event selector label specifies which events cause the displayed
 case to execute.
-+
 . The Timeout terminals specifies the number of milliseconds to wait for
 an event before timing out.
-
-[arabic]
 . The Event Data Node identifies the data LabVIEW returns when an event
 occurs
