@@ -1,4 +1,5 @@
 = Course Manual
+:toclevels: 1
 
 IMPORTANT: {wip}
 
