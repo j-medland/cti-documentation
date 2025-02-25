@@ -1,3 +1,0 @@
-= LabVIEW Instrument Emulator
-
-IMPORTANT: {wip}
