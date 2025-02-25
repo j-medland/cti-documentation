@@ -6,7 +6,7 @@ IMPORTANT: {wip}
 
 Go to https://www.virtualbox.org/wiki/Downloads[Virtualbox.org] and download the latest version.
 
-image::virtualbox-website.png[]
+image::in_001.00_DownoadVirtualBox.png[]
 
 And install.
 
@@ -15,65 +15,97 @@ Download https://downloads.gcentral.org/vm/20231021_OpenSUSE_CTIBase.ova[OVA fil
 
 Now File>>Import Appliance into Virtualbox  
 
+image::in_002.00_ImportAppliance.png[]
+
 Find the downloaded OVA and press Next
 
+image::in_003.00_ApplianceToImport.png[]
+
+image::in_004.00_ApplianceSettings.png[]
 
 Press finish and the OVA will Import and appear as a new Virtual Machine (VM).
 
+image::in_005.00_ImportingAppliance.png[]
+
+image::in_006.00_Start.png[]
 
 When imported open the new VM
 
-Tip the right ctrl button will free your mouse if the VM steals it.
+NOTE: Tip, the right ctrl button will free your mouse if the VM steals it.
 
 Login as root, this solves a lot of issues with LabVIEW and Linux. Password is the same as the normal login. (labviewtraining)
 
+image::in_007.00_TopRight.png[]
 
+image::in_008.00_LogOut.png[]
+
+image::in_009.00_LogIn.png[]
 
 Click here and select Other… enter root and password (labviewtraining)
 
+image::in_010.00_LogInAsRoot.00.png[]
 
 And you should see the following.
 
+image::in_011.00_Desktop.png[]
 
 == Setting Up Your Keyboard
 
 To change to a different keyboard, open up the start-up menu and select settings>>keyboard.
 
+image::in_012.00_Keyboard.png[]
+
 Select the keyboard that suits from the extensive list!
 
+image::in_013.00_KeyboardLanguage.png[]
 
 == Load and Activate LabVIEW
 
+image::in_014.00_LabVIEW.png[]
+
 Activate LabVIEW Community Edition License – you’ll need an active account on NI.com.
+
+image::in_015.00_ActivateLabVIEWCommunityEdition.png[]
 
 This will load the activation website in using Firefox
 
+image::in_016.00_NIuserAccount.png[]
 
 Tap in your user account details and the LabVIEW license will activate.
 
 If you want to remove a license, the .lc file can be found in /root/natinst/.config/LabVIEW-2022/
 
+image::in_017.00_LabVIEW_lc_file.png[]
+
 LabVIEW will now load as normal
 
 == Install Course Materials
 
- 
+image::in_018.00_AccessCommunityTrainingResources.png[]
 
 We’ve modified the Getting Started Window, this link will take you to the CTI Github repo.
 
+image::in_019.00_GitHubCTImaterial.png[]
 
 Select the course you wish to give.
 
+image::in_020.00_DownloadZIP.png
+
 Download as a zip file
+
+image::in_021.00_OpenDownloads.png[]
 
 Click on the file symbol
 
+image::in_022.00_Extract.png[]
 
 and extract to /root/Desktop
 
+image::in_023.00_ExtractDestination.png[]
 
 You should now have a desktop that resembles this
 
+image::in_024.00_ExtractedMaterials.png[]
 
 == Installing Drivers
 
@@ -84,16 +116,19 @@ Using the File System icon on the desktop navigate to /usr/local/natinst/LabVIEW
 
 Drag HandsOnPi2040 directory to ../instr.lib
 
+image::in_025.00_DragInstrumentDriverTOinstr.lib.png[]
 
 Open LabVIEW and create a new VI. Check the drivers are in the instr.lib as expected
 
-
+image::in_026.00_HandsOnInstrumentPalette.png[]
 
 
 == Making Emulator Exe run in Linux
 
 
 The file CTIPicoVISAEmulator.exe needs to be set to be executable
+
+image::in_027.00_MarkEXE.png[]
 
 == Setting Pico Firmware
 
@@ -102,21 +137,26 @@ Each  Raspberry Pi Pico will need the course firmware installed on it.
 
 Hold the BOOTSEL button down on the Pico and plug the USB cable into the computer. The Pico will act as a flash drive.
 
-
+image::in_028.00_BOOTSEL.png[]
 
 In the Linux VM select Devices>>USB>>Raspberry Pi RP2 Boot [0100] (or similar)
 
+image::in_029.00_DevicesUSB.png[]
 
-This will mount the harddrive on the desktop
+This will mount the hard drive on the desktop
 
+image::in_030.00_DeviceAsUSBflashDrive.png[]
 
 Next drag and drop the course firmware file onto the Pico. This will install and the Pico LED will flash green 6 times.
 
+image::in_031.00_DragFirmware.png[]
 
 == Connect and Test the Pico
 
 
 In the Linux VM select Devices>>USB>>Raspberry Pi Pico [0100] (or similar)
+
+image::in_032.00_ConnectVMtoUSBdevice.png[]
 
 Connect the Pico
 
