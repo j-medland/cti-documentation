@@ -1,7 +1,5 @@
 = Set-up Instructions
 
-IMPORTANT: {wip}
-
 == Install Virtualbox
 
 Go to https://www.virtualbox.org/wiki/Downloads[Virtualbox.org] and download the latest version.
