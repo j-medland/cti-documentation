@@ -286,7 +286,7 @@ image::cm_039.00_DragTrueConstantOutsideForLoop-WireToShiftRegister.png[]
 •	Remember to wire it back into the SubVI.
 040.00_ForLoopWired-TrueFromShiftRegisterToWriteDO.png[]
 
-_If you were to run the program at this point the LED would light up, but would not `blink.`
+NOTE: If you were to run the program at this point the LED would light up, but would not `blink.`
 
 * For a blinking LED you will need to invert the boolean value after every loop. To do this Right-click anywhere to bring up the functions palette. Hover over `Boolean` then select the `Not` Boolean. Wire this into the shift registers.
 
@@ -637,7 +637,7 @@ image::cm_081.00_ReadAI_Wired.png[]
 
 image::cm_082.00_Initialize-ReadAI-Close-Wired.png[]
 
-_The program will successfully run at this point, however, it will
+NOTE: The program will successfully run at this point, however, it will
 execute too fast to move the Analog Sticks for continuous data.
 
 * To fix this issue, you can add a While Loop. Bring up the Functions
