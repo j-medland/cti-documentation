@@ -1,10 +1,6 @@
 = Course Manual
 :page-toclevels: 1
 
-IMPORTANT: {wip}
-
-
-
 == Setting up the System
 
 
