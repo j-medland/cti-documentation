@@ -1,3 +1,0 @@
-= Emulador de instrumento en {lv}
-
-IMPORTANT: {wip}

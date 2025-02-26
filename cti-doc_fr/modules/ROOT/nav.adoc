@@ -1,4 +1,3 @@
 * xref:index.adoc[Instruction de configuration]
 * xref:course-manual.adoc[Manuel de Cours]
-* xref:labview-instrument-emulator.adoc[Emulateur d'instrument pour {lv}]
 * xref:contributing.adoc[Comment contribuer]
