@@ -8,7 +8,7 @@ IMPORTANT: {wip}
 == Setting up the System
 
 
-See xref:index.adoc#inline[] 
+See xref:index.adoc#Set-up Instructions[Set-up Instructions] 
 
 * If you are using the Emulator, load it by navigating to
 /root/Desktop/GettingStartedLabVIEW1-English-main/3) LabVIEW Instrument
@@ -35,12 +35,29 @@ displayed in status bar.
 
 === Optional: Setting up the Hardware 
 
-Setting up the Pico Hardware
-Wiring for the Pico can be found in document: Course Manual Pico Wiring.odt
-// TO-DO Need to convert this document to adoc and point here
-Setting up the Raxda Hardware
-Wiring for the Pico can be found in document: Course Manual Radxa X2L Wiring.odt
-// TO-DO Need to convert this document to adoc and point it here
+.Setting up the Pico Hardware
+[%collapsible]
+====
+Wire your Pico Hardware to match the images below
+
+image::pw_001.00_DigitalOutputsWiring.jpg[]
+
+image::pw_002.00_DigitalOutputsWiring.jpg[]
+
+====
+
+.Setting up the Raxda Hardware
+[%collapsible]
+====
+Wire your Radxa Hardware to match the images below
+
+image::rw_001.00_Power.png[]
+
+image::rw_002.00_DigitalOutputsWiring.png[]
+
+image::rw_003.00_DigitalOutputsWiring.png[]
+
+====
 
 === Lesson Instructions
 
@@ -177,14 +194,32 @@ image::cm_029.00_LED_Turns_ON.png[]
 == Lesson 2 – For Loops
 NOTE: This lesson is optional.
 
-=== Optional: Setting up the Pico Hardware
+=== Optional: Setting up the Hardware 
 
-//TO DO Need to add links to the wiring documents
-Wiring for Pico
+.Setting up the Pico Hardware
+[%collapsible]
+====
+Wire your Pico Hardware to match the images below
 
-=== Optional: Setting up the Raxda Hardware
-Wiring for Raxda
-//TO DO Need to add links to the wiring documents
+image::pw_001.00_DigitalOutputsWiring.jpg[]
+
+image::pw_002.00_DigitalOutputsWiring.jpg[]
+
+====
+
+.Setting up the Raxda Hardware
+[%collapsible]
+====
+Wire your Radxa Hardware to match the images below
+
+image::rw_001.00_Power.png[]
+
+image::rw_002.00_DigitalOutputsWiring.png[]
+
+image::rw_003.00_DigitalOutputsWiring.png[]
+
+====
+
 
 === Lesson Instructions
 A For Loop executes a sub-diagram a set number of times. In this case
@@ -278,14 +313,31 @@ the Digital Output.
 == Lesson 3 – While Loops
 NOTE: This lesson is optional.
 
-=== Optional: Setting up the Pico Hardware
+=== Optional: Setting up the Hardware 
 
-//TO DO Need to add links to the wiring documents
-Wiring for Pico
+.Setting up the Pico Hardware
+[%collapsible]
+====
+Wire your Pico Hardware to match the images below
 
-=== Optional: Setting up the Raxda Hardware
-Wiring for Raxda
-//TO DO Need to add links to the wiring documents
+image::pw_001.00_DigitalOutputsWiring.jpg[]
+
+image::pw_002.00_DigitalOutputsWiring.jpg[]
+
+====
+
+.Setting up the Raxda Hardware
+[%collapsible]
+====
+Wire your Radxa Hardware to match the images below
+
+image::rw_001.00_Power.png[]
+
+image::rw_002.00_DigitalOutputsWiring.png[]
+
+image::rw_003.00_DigitalOutputsWiring.png[]
+
+====
 
 
 === Lesson Instructions
@@ -322,15 +374,32 @@ running then the Loop will end and the `blinking` LED will stop.
 image::cm_047.00_WhileLoopWired-BooleanSwitchWiredToStopTerminal.png
 
 === Exercise – Use DI to stop the loop
-=== Optional: Setting up the Pico Hardware
 
+=== Optional: Setting up the Hardware 
 
-//TO DO Need to add links to the wiring documents
-Wiring for Pico
+.Setting up the Pico Hardware
+[%collapsible]
+====
+Wire your Pico Hardware to match the images below
 
-=== Optional: Setting up the Raxda Hardware
-Wiring for Raxda
-//TO DO Need to add links to the wiring documents 
+image::pw_006.00_DigitalInputsWiring.jpg[]
+
+image::pw_007.00_DigitalInputsWiring.jpg[]
+
+====
+
+.Setting up the Raxda Hardware
+[%collapsible]
+====
+Wire your Radxa Hardware to match the images below
+
+image::rw_001.00_Power.png[]
+
+image::rw_006.00_DigitalInputsWiring.png[]
+
+image::rw_007.00_DigitalInputsWiring.png[]
+
+====
 
 Hint: wiring diagram for DI
 
@@ -338,15 +407,32 @@ image::cm_048.00_HandsOnPi20240_ReadDI.png[]
 
 == Lesson 4 – Event Structure
 
-=== Optional: Setting up the Pico Hardware
+=== Optional: Setting up the Hardware 
 
+.Setting up the Pico Hardware
+[%collapsible]
+====
+Wire your Pico Hardware to match the images below
 
-//TO DO Need to add links to the wiring documents
-Wiring for Pico
+image::pw_001.00_DigitalOutputsWiring.jpg[]
 
-=== Optional: Setting up the Raxda Hardware
-Wiring for Raxda
-//TO DO Need to add links to the wiring documents
+image::pw_002.00_DigitalOutputsWiring.jpg[]
+
+====
+
+.Setting up the Raxda Hardware
+[%collapsible]
+====
+Wire your Radxa Hardware to match the images below
+
+image::rw_001.00_Power.png[]
+
+image::rw_002.00_DigitalOutputsWiring.png[]
+
+image::rw_003.00_DigitalOutputsWiring.png[]
+
+====
+
 
 === Lesson Instructions
 
@@ -491,16 +577,31 @@ the execution of the program.
 
 == Lesson 5 – Numbers, Graphs and Charts
 
-=== Optional: Setting up the Pico Hardware (Analog input)
+=== Optional: Setting up the Hardware 
 
+.Setting up the Pico Hardware (Analog Input)
+[%collapsible]
+====
+Wire your Pico Hardware to match the images below
 
-//TO DO Need to add links to the wiring documents
-Wiring for Pico
+image::pw_003.00_AnalogInputsWiring.jpg[]
 
-=== Optional: Setting up the Raxda Hardware
-Wiring for Raxda
-//TO DO Need to add links to the wiring documents
+image::pw_004.00_AnalogInputsWiring.gif[]
 
+image::pw_005.00_AnalogInputsWiring.gif[]
+
+====
+
+.Setting up the Raxda Hardware (Analog Input)
+[%collapsible]
+====
+Wire your Radxa Hardware to match the images below
+
+image::rw_004.00_AnalogInputsWiring.png[]
+
+image::rw_005.00_AnalogInputsWiring.png[]
+
+====
 
 === Lesson Instructions
 
@@ -574,14 +675,28 @@ image::cm_087.00_FrontPanel-StopButton-ErrorOut-Chart.png[]
 
 ==== Analog Output (Write)
 
-=== Optional: Setting up the Pico Hardware (Analog Output)
+=== Optional: Setting up the Hardware 
 
-//TO DO Need to add links to the wiring documents
-Wiring for Pico
+.Setting up the Pico Hardware (Analog Output)
+[%collapsible]
+====
+Wire your Pico Hardware to match the images below
 
-=== Optional: Setting up the Raxda Hardware (Analog Output)
-Wiring for Raxda
-//TO DO Need to add links to the wiring documents
+image::pw_008.00_AnalogOutputsWiring.gif[]
+
+====
+
+.Setting up the Raxda Hardware (Analog Output)
+[%collapsible]
+====
+Wire your Radxa Hardware to match the images below
+
+image::rw_008.00_AnalogOutputsWiring.png[]
+
+image::rw_009.00_AnalogOutputsWiring.png[]
+
+====
+
 
 * Beginning with a Block Diagram with an Initialize.vi and a Close.vi. Right-click
 to bring up the Functions Palette. Follow along with the image below and
@@ -683,15 +798,6 @@ and you will be results will show on the Emulator.
 image::cm_104.00_MovingSliders-HandsOnEmulatorDisplaysMovement.png[]
 
 ==== Analog Output (Read)
-
-=== Optional: Setting up the Pico Hardware (Read)
-
-//TO DO Need to add links to the wiring documents
-Wiring for Pico
-
-=== Optional: Setting up the Raxda Hardware (Read)
-Wiring for Raxda
-//TO DO Need to add links to the wiring documents
 
 If you want a more accurate representation for the `Duty` and
 `Frequency` sliders you can use the ReadAOs.vi.
