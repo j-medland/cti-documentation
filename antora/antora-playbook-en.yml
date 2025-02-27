@@ -18,6 +18,7 @@ content:
     start_paths: cti-doc_en/content, cti-doc_en/home
 asciidoc:
   attributes:
+    page-component-order: 'cti-doc'
     experimental: ''
     idprefix: ''
     idseparator: '-'

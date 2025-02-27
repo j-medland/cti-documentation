@@ -1,8 +1,4 @@
-= Welcome to the Wovalab open-source projects documentation website 
+= Welcome to the CTI documentation 
 :navtitle: Home
 :description: Home of the CTI documentation.
 :page-role: home
-:badge-attributes: &icon=white&left_color=darkgreen&right_color=forestgreen
-
-
-Welcome to the CTI documentation.
