@@ -17,7 +17,7 @@ NOTE: There's no need to merge those `vx.y` in main. The build and publish actio
 == Creating a New Version
 
 . Create a new `vx.y` branch starting from the most recent branch version.
-. Update the `version:` attribute of each `cti-doc_xx/content/antora.yml` file according to the version name.
+. Update the `version:` attribute of each `cti-doc_xx/content/antora.yml` and `cti-doc_xx/home/antora.yml` files according to the version name.
 
 TIP: You can add a `prerelease:` attribute to suffix the version name as long as the content is not ready for an official release. The version will be accessible on the website, but it will not be displayed as the default version to the visitor.
 
@@ -30,7 +30,7 @@ Execute the following steps:
 * Execute the following command `npx gulp bundle`
 . Build the website.
 * Open a Terminal in the `antora` folder.
-* execute the following command `npx antora --ui-bundle-url ../user-interface/build/ui-bundle.zip --to-dir build/sites/en  antora-playbook-en.yml`.
+* execute the following command `npx antora --ui-bundle-url ../user-interface/build/ui-bundle.zip --url _<absolute path to your local repository>_ --to-dir build/sites/en  antora-playbook-en.yml`.
 
 Once built, the website is available in the `/antora/build/sites/en` folder.
 
