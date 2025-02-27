@@ -1,6 +1,6 @@
 name: cti-doc
 title: LabVIEW培训
-version: ~
+version:  v1.0
 nav:
   - modules/ROOT/nav.adoc
 asciidoc:
