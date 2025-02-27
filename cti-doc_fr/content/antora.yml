@@ -1,6 +1,7 @@
 name: cti-doc
 title: Formation LabVIEW
 version: v1.0
+prerelease: -alpha
 nav:
   - modules/ROOT/nav.adoc
 asciidoc:
