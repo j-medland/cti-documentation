@@ -14,7 +14,7 @@ urls:
 content:
   sources:
   - url: ./../
-    branches: [v*]
+    branches: [v*.*]
     start_paths: cti-doc_en/content, cti-doc_en/home
 asciidoc:
   attributes:
