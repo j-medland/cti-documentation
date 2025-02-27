@@ -14,9 +14,11 @@ urls:
 content:
   sources:
   - url: ./../
-    start_paths: cti-doc_zh
+    branches: [v*]
+    start_paths: cti-doc_zh/content, cti-doc_zh/home
 asciidoc:
   attributes:
+    page-component-order: 'cti-doc'
     experimental: ''
     idprefix: ''
     idseparator: '-'

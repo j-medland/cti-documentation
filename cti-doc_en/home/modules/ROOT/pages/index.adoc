@@ -1,0 +1,4 @@
+= Welcome to the CTI documentation 
+:navtitle: Home
+:description: Home of the CTI documentation.
+:page-role: home

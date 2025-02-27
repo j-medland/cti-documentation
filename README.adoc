@@ -7,6 +7,20 @@ This is a multilingual repository to host all of the documentation for the LabVI
 The site is built and published automatically as soon as a push on the repository is done.
 See the `Actions` tab for details.
 
+== Documentation Versioning and Branching Workflow
+
+Versioning of the documentation relies on branches.
+Each version of the documentation stands in branches called `vx.y`.
+
+NOTE: There's no need to merge those `vx.y` in main. The build and publish action is triggered on any `vx.y` branch push.
+
+== Creating a New Version
+
+. Create a new `vx.y` branch starting from the most recent branch version.
+. Update the `version:` attribute of each `cti-doc_xx/content/antora.yml` file according to the version name.
+
+TIP: You can add a `prerelease:` attribute to suffix the version name as long as the content is not ready for an official release. The version will be accessible on the website, but it will not be displayed as the default version to the visitor.
+
 == Building the site locally
 
 Execute the following steps:

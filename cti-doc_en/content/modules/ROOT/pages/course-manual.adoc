@@ -647,7 +647,7 @@ image::cm_083.00_RightClick-FunctionsPalette-Structures-WhileLoop2.png[]
 this will simply be a Stop Boolean. Right-click on the Loop Condition
 and `Create Control`.
 
-image::cm_084.00_RightClick-Create-Control.png[]
+image::cm_083.00_RightClick-FunctionsPalette-Structures-WhileLoop2.png[]
 image::cm_084.00_FrontPanel-StopButton-ErrorOut.png[]
 
 NOTE: This will automatically add a Stop Boolean onto the Front Panel.
