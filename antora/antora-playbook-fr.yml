@@ -15,7 +15,7 @@ content:
   sources:
   - url: ./../
     branches: [v*]
-    start_paths: cti-doc_fr
+    start_paths: cti-doc_fr/content, cti-doc_fr/home
 asciidoc:
   attributes:
     page-component-order: 'cti-doc'
