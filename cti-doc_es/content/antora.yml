@@ -1,6 +1,6 @@
 name: cti-doc
 title: Entrenamiento LabVIEW
-version: v1.0
+version: v2.0
 prerelease: -alpha
 nav:
   - modules/ROOT/nav.adoc
