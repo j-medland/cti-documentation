@@ -2,7 +2,7 @@
 
 == Install Virtualbox
 
-Go to https://www.virtualbox.org/wiki/Downloads[Virtualbox.org] and download the latest version.
+Go to https://www.virtualbox.org/wiki/Downloads[Virtualbox.org] and download the 7.0.X version.
 
 image::in_001.00_DownoadVirtualBox.png[]
 
