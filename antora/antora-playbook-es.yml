@@ -13,7 +13,7 @@ urls:
   latest_version_segment_strategy: redirect:to
 content:
   sources:
-  - url: ./../
+  - url: https://github.com/LabVIEWCommunityTraining/cti-documentation
     branches: [v*.*]
     start_paths: cti-doc_es/content, cti-doc_es/home
 asciidoc:
