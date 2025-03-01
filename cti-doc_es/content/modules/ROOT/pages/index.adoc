@@ -4,20 +4,19 @@
 
 Visite el sitio:
 
-https://www.virtualbox.org/wiki/Downloads[Virtual Box Downloads]
+https://www.virtualbox.org/wiki/Download_Old_Builds[Virtual Box Downloads-Old Builds]
 
-* Descargue la última versión e instálela.
+* Descargue la última versión 7.0.X e instálela.
 
 image::VirtualBox.png[image]
 
 == Importar Máquina Virtual (VM)
 
-Visite el sitio de GCentral para descargar una imagen de máquina virtual que contiene LabVIEW previamente instalado.
-Ve a "Initiatives" y presiona el enlace "Community Training Initiative". Una vez ahí, presiona el enlace "Download the CTI VMN" para bajar la imagen de la máquina virtual.
+Descarge el archivo OVA del siguiente link
 
-https://www.gcentral.org[GCentral]
+https://downloads.gcentral.org/vm/20231021_OpenSUSE_CTIBase.ova[Archivo VM OVA]
 
-image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Spanish/assets/7232195/31aa4276-be32-4ff8-82da-e9752427e0d2[image]
+
 
 Una vez descargado, vaya a Virtual Box, al menú *File >> Import Appliance into Virtualbox*, o bien presione *Ctrl+I*.
 
@@ -220,6 +219,5 @@ https://thepihut.com/products/breadboard-kit-for-raspberry-pi-pico
 
 Parte de la idea detrás de este proyecto es que no haya costos respecto al software.
 
-La VM viene precargada con LibreOffice: es el medio preferido para leer los manuales.
 
-La VM también tiene un programa llamado Pinta, un programa de gráficos en capas similar a Paint.net. Los diagramas de cableado están hechos con este programa, https://www.pinta-project.com/[PINTA]
+La VM  tiene un programa llamado Pinta, un programa de gráficos en capas similar a Paint.net. Los diagramas de cableado están hechos con este programa, https://www.pinta-project.com/[PINTA]
