@@ -4,18 +4,17 @@
 
 Visite el sitio:
 
-https://www.virtualbox.org/wiki/Downloads[Virtual Box Downloads]
+https://www.virtualbox.org/wiki/Download_Old_Builds[Virtual Box Downloads-Old Builds]
 
-* Descargue la última versión e instálela.
+* Descargue la versión 7.0.X e instálela.
 
 image::VirtualBox.png[image]
 
 == Importar Máquina Virtual (VM)
 
-Visite el sitio de GCentral para descargar una imagen de máquina virtual que contiene LabVIEW previamente instalado.
-Ve a "Initiatives" y presiona el enlace "Community Training Initiative". Una vez ahí, presiona el enlace "Download the CTI VMN" para bajar la imagen de la máquina virtual.
+Descargue la maquina virtual desde:
 
-https://www.gcentral.org[GCentral]
+https://downloads.gcentral.org/vm/20231021_OpenSUSE_CTIBase.ova[OVA File]
 
 image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Spanish/assets/7232195/31aa4276-be32-4ff8-82da-e9752427e0d2[image]
 
