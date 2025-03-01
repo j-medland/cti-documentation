@@ -14,9 +14,7 @@ image::VirtualBox.png[image]
 
 Descargue la maquina virtual desde:
 
-https://downloads.gcentral.org/vm/20231021_OpenSUSE_CTIBase.ova[OVA File]
-
-image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Spanish/assets/7232195/31aa4276-be32-4ff8-82da-e9752427e0d2[image]
+https://downloads.gcentral.org/vm/20231021_OpenSUSE_CTIBase.ova[Archivo OVA Máquina Virtual]
 
 Una vez descargado, vaya a Virtual Box, al menú *File >> Import Appliance into Virtualbox*, o bien presione *Ctrl+I*.
 
