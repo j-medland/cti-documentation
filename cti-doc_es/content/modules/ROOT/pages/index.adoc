@@ -6,11 +6,13 @@ Visite el sitio:
 
 https://www.virtualbox.org/wiki/Download_Old_Builds[Virtual Box Downloads-Old Builds]
 
+
 * Descargue la versión 7.0.X e instálela.
 
 image::VirtualBox.png[image]
 
 == Importar Máquina Virtual (VM)
+
 
 Descargue la maquina virtual desde:
 
@@ -217,6 +219,6 @@ https://thepihut.com/products/breadboard-kit-for-raspberry-pi-pico
 
 Parte de la idea detrás de este proyecto es que no haya costos respecto al software.
 
-La VM viene precargada con LibreOffice: es el medio preferido para leer los manuales.
+
 
 La VM también tiene un programa llamado Pinta, un programa de gráficos en capas similar a Paint.net. Los diagramas de cableado están hechos con este programa, https://www.pinta-project.com/[PINTA]
