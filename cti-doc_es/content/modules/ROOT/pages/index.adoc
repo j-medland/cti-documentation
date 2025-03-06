@@ -6,17 +6,17 @@ Visite el sitio:
 
 https://www.virtualbox.org/wiki/Download_Old_Builds[Virtual Box Downloads-Old Builds]
 
-* Descargue la última versión 7.0.X e instálela.
+
+* Descargue la versión 7.0.X e instálela.
 
 image::VirtualBox.png[image]
 
 == Importar Máquina Virtual (VM)
 
-Descarge el archivo OVA del siguiente link
 
-https://downloads.gcentral.org/vm/20231021_OpenSUSE_CTIBase.ova[Archivo VM OVA]
+Descargue la maquina virtual desde:
 
-
+https://downloads.gcentral.org/vm/20231021_OpenSUSE_CTIBase.ova[Archivo OVA Máquina Virtual]
 
 Una vez descargado, vaya a Virtual Box, al menú *File >> Import Appliance into Virtualbox*, o bien presione *Ctrl+I*.
 
@@ -220,4 +220,5 @@ https://thepihut.com/products/breadboard-kit-for-raspberry-pi-pico
 Parte de la idea detrás de este proyecto es que no haya costos respecto al software.
 
 
-La VM  tiene un programa llamado Pinta, un programa de gráficos en capas similar a Paint.net. Los diagramas de cableado están hechos con este programa, https://www.pinta-project.com/[PINTA]
+
+La VM también tiene un programa llamado Pinta, un programa de gráficos en capas similar a Paint.net. Los diagramas de cableado están hechos con este programa, https://www.pinta-project.com/[PINTA]
