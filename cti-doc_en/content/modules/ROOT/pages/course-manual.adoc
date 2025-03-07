@@ -55,31 +55,44 @@ image::rw_003.00_DigitalOutputsWiring.png[]
 
 ====
 
-=== Lesson Instructions
+=== Lesson 1 Instructions
 
-The LabVIEW version of a “Hello World” program is to make a piece of
-hardware do something basic, usually it is turning an LED On and Off.
+The LabVIEW version of a “Hello World” program makes a piece of hardware
+do something basic, usually turning an LED on and off. In this case, you
+will also query the device so that it returns its “name.”
 
-Load LabVIEW and select a New VI.
+A block of code in LabVIEW is called a Virtual Instrument (VI). As such,
+a LabVIEW program has a *.vi extension and is comprised of two parts.
+The code resides in the Block Diagram and connects to the Front Panel
+(or User Interface.) The Front Panel displays data in indicators and
+receives data through inputs. (see the quick
+https://www.linkedin.com/posts/nancyhenson_labview-spotteddogmedia-gdevcon-activity-7196295349852921856-iuGq?utm_source=share&utm_medium=member_desktop[video]
+in this post) An application is comprised of many, if not hundreds or
+thousands of VIs.
+
+
+[arabic]
+. Start LabVIEW
+. Select a New VI.
++
 
 image::cm_005.00_SelectFile--NewVI.png[]
 
-Setup the screen like this:
+. For these lessons, you will want to see the Front Panel and the Block
+Diagram simultaneously. Arrange the components of the VI, the Block
+Diagram, and the Front Panel like this:
++
 
 image::cm_006.00_SetupScreen_BlockDiagram_FrontPanel_Emulator.png[]
 
-In LabVIEW a VI is a Virtual Instrument is equivalent to a function or
-module in other languages. A LabVIEW program is made up of 1 or more
-VIs.
-
-* In the block diagram right-click and navigate to the HandsOnPi2040
-Driver Palette.
-
+. Position the mouse over the Block Diagram and right-click. The
+Functions Palette opens.
++
 image::cm_007.00_NavigateToHandsOnPi2040DriverPalette.png[]
 
-Drag and drop Initialize.vi, WriteDO.vi and Close.vi onto the block diagram
-as shown below.
-
+. Select and drop the following onto the Block Diagram: *Initialize.vi*,
+*WriteDO.vi*, and *Close.vi*.
++
 image::cm_008.00_DrangAndDrop-Initialize-WriteDO-Close.png[]
 
 NOTE: The Run-arrow is broken (the run arrow appears in the top left corner), if you press it, it will list all the reasons why it`s broken.
