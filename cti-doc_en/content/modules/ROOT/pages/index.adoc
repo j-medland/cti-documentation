@@ -4,14 +4,28 @@ CAUTION: {wip}
 
 == Install Virtualbox
 
-Go to https://www.virtualbox.org/wiki/Downloads[Virtualbox.org] and download the latest version.
+Go to https://www.virtualbox.org/wiki/Downloads[Virtualbox.org] and download version 7.0.
 
 image::in_001.00_DownoadVirtualBox.png[]
 
-And install.
+Click on the Download Button, that will take you to the Downloads page
+
+image::in_001.01_DownoadVirtualBox-DownloadsPage.png[]
+
+there, scroll down to click on "Previous Releases"
+
+image::in_001.02_DownoadVirtualBox-ClickOnPreviousReleases.png[]
+
+Select the 7.0 release
+
+image::in_001.03_DownoadVirtualBox-SelectVersion7.0.png[]
+
+and install.
 
 == Import VM
-Download https://downloads.gcentral.org/vm/20231021_OpenSUSE_CTIBase.ova[OVA file]
+Visit  https://gcentral.org/cti/[Gcentral/cti] and download the OVA file for the CTI virtual machine
+
+image::in_001.04_GCentral-CTI.png[]
 
 Now File>>Import Appliance into Virtualbox  
 
@@ -31,39 +45,85 @@ image::in_006.00_Start.png[]
 
 When imported open the new VM
 
+You may need to click on the "Show" button to get to your Virtual Machine
+
+image::in_008_Show.png[]
+
 NOTE: Tip, the right ctrl button will free your mouse if the VM steals it.
 
-Login as root, this solves a lot of issues with LabVIEW and Linux. Password is the same as the normal login. (labviewtraining)
-
-image::in_007.00_TopRight.png[]
-
-image::in_008.00_LogOut.png[]
+We no longer log in as a ROOT. The amazing team behind CTI has figured out how to avoid the need to have a ROOT Login. We will be using instead the CTI STUDENT log in with password = labviewtraining
 
 image::in_009.00_LogIn.png[]
 
-Click here and select Other… enter root and password (labviewtraining)
-
-image::in_010.00_LogInAsRoot.00.png[]
-
-And you should see the following.
+You will see the following Desktop
 
 image::in_011.00_Desktop.png[]
 
 == Setting Up Your Keyboard
 
-To change to a different keyboard, open up the start-up menu and select settings>>keyboard.
+To change to a different keyboard, open up the start-up menu:
 
-image::in_012.00_Keyboard.png[]
+image::in_012.00_ClickOnMenu.png[]
 
+Type Keyboard and click on "Keyboard and Mouse"
+
+image::in_012.01_TypeKeyboard.png[]
+
+Click on "Keyboard Layout"
 Select the keyboard that suits from the extensive list!
 
 image::in_013.00_KeyboardLanguage.png[]
 
 == Load and Activate LabVIEW
 
-image::in_014.00_LabVIEW.png[]
+We strongly recommend that you open Firefox before you activate LabVIEW.
+Open up the start-up menu and click on Other>>Post a question on the NI Forums
+This will open the NI Forums.
 
-Activate LabVIEW Community Edition License – you’ll need an active account on NI.com.
+image::in_014.00_OpenNIwebsite.png
+
+If you don't have an account, please create one and log in. If you already have an account, please log in.
+The first time you open Firefox it may take a little longer to refresh.
+
+image::in_014.01_CreateNIaccountOrLogIn.png[]
+
+You also need to have LabVIEW Community Edition Listed as one of your products. To verify this, go to "My Products". This may take a couple of minutes. 
+
+image::in_014.02_MyProducts.png[]
+
+You should have LabVIEW Community Edition, Linux listed as one of your products
+
+image::in_014.04_LabVIEWCommunityEditionLinux.png[]
+
+
+.Don't see LabVIEW Community Edition Listed
+[%collapsible]
+====
+
+If you don't see, it, you will need to initiate the LabVIEW download process to gain that entitlement.
+
+To download, go to Products>>LabVIEW
+
+image::in_014.05_ProductsLabVIEW.png[]
+
+Click on the Download button
+
+image::in_014.06_ClickDownload.png[]
+
+Select the Community Edition for Linux and click Download
+
+image::in_014.07_SelectLinuxCommunityEdition.png[]
+
+You can cancel the download process because LabVIEW is already installed on your VM. You just needed to initiate the download process to get the entitlement.
+
+====
+
+Now, you can minimize Firefox for now and let's open LabVIEW to activate it. 
+Double-click on the LabVIEW shortcut on the VM desktop
+
+image::in_014.08_ClickOnLabVIEWdesktopShortcut.png[]
+
+Activate LabVIEW Community Edition License. You will need to log in again to your NI Account on on NI.com.
 
 image::in_015.00_ActivateLabVIEWCommunityEdition.png[]
 
@@ -72,10 +132,6 @@ This will load the activation website in using Firefox
 image::in_016.00_NIuserAccount.png[]
 
 Tap in your user account details and the LabVIEW license will activate.
-
-If you want to remove a license, the .lc file can be found in /root/natinst/.config/LabVIEW-2022/
-
-image::in_017.00_LabVIEW_lc_file.png[]
 
 LabVIEW will now load as normal
 
