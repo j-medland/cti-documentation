@@ -139,7 +139,7 @@ LabVIEW will now load as normal
 
 image::in_018.00_AccessCommunityTrainingResources.png[]
 
-We’ve modified the Getting Started Window, this link will take you to the CTI Github repo.
+Open the start-up menu and click on Other>>Visit LabVIEW Community Training on GitHub
 
 image::in_019.00_GitHubCTImaterial.png[]
 
