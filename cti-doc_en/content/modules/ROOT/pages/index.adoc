@@ -188,15 +188,15 @@ and right-click on CTIPicoVISAEmulator folder and select "Open in Terminal"
 
 image::in_026.99_OpenInTerminal.png[]
 
-Then type ls key:Enter[]
+Then type ls kbd:[Enter]
 
-Then type ./CTIPicoVISAEmulator.exe key:Enter[]
+Then type ./CTIPicoVISAEmulator.exe kbd:[Enter]
 
 If you get a Permission denied, then type
 
-chmod u+x CTIPicoVISAEmulator.exe key:Enter[]
+chmod u+x CTIPicoVISAEmulator.exe kbd:[Enter]
 
-Now you should be able to type ./CTIPicoVISAEmulator.exe key:Enter[]
+Now you should be able to type ./CTIPicoVISAEmulator.exe kbd:[Enter]
 
 image::in_027.00_MarkEXE.png[]
 
