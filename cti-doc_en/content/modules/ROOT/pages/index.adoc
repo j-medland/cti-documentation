@@ -145,7 +145,7 @@ image::in_019.00_GitHubCTImaterial.png[]
 
 Select the course you wish to give.
 
-image::in_020.00_DownloadZIP.png
+image::in_020.00_DownloadZIP.png[]
 
 Download as a zip file
 
@@ -155,7 +155,7 @@ Click on the file symbol
 
 image::in_022.00_Extract.png[]
 
-and extract to /root/Desktop
+and extract to Desktop
 
 image::in_023.00_ExtractDestination.png[]
 
@@ -168,7 +168,7 @@ image::in_024.00_ExtractedMaterials.png[]
 
 Open up ../4) LabVIEW Instrument Drivers in a window
 
-Using the File System icon on the desktop navigate to /usr/local/natinst/LabVIEW-2022-64/instr.lib
+Clicking on the Computer icon on the desktop and then on the File System, navigate to /usr/local/natinst/LabVIEW-2024-64/instr.lib
 
 Drag HandsOnPi2040 directory to ../instr.lib
 
@@ -183,8 +183,46 @@ image::in_026.00_HandsOnInstrumentPalette.png[]
 
 
 The file CTIPicoVISAEmulator.exe needs to be set to be executable
+Open the  GettingStartedLabVIEW1-English-main folder and navigate to 3) LabVIEW Instrument Emulator/builds/HandsOn
+and right-click on CTIPicoVISAEmulator folder and select "Open in Terminal"
+
+image::in_026.99_OpenInTerminal.png[]
+
+Then type ls key:Enter[]
+
+Then type ./CTIPicoVISAEmulator.exe key:Enter[]
+
+If you get a Permission denied, then type
+
+chmod u+x CTIPicoVISAEmulator.exe key:Enter[]
+
+Now you should be able to type ./CTIPicoVISAEmulator.exe key:Enter[]
 
 image::in_027.00_MarkEXE.png[]
+
+.Click here if you are getting other errors
+[%collapsible]
+====
+If you get other errors, then you need to build the Emulator executable for your VM.
+
+Navigate to Desktop/GettingStartedLabVIEW1-English-main/3) LabVIEW Instrument Emulator/Project and double-click on HandsOn.lvproj ot open it in LabVIEW
+
+Double-click Build Specifications
+
+Right-click on CTIPicoVISAEmulator and click on Build
+
+image::in_027.01_BuildSpecifications.png[]
+
+Once is done, click on the Explore button 
+
+image::in_027.02_Explore.png[]
+
+and you should be able to execute the exe
+
+image::in_027.03_EmulatorExecuting.png[]
+
+====
+
 
 == Setting Pico Firmware
 
