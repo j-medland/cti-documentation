@@ -1,40 +1,58 @@
 = Instrucciones para tutor
 
+CAUTION: {wip}
+
 == Instalar VirtualBox
 
-Visite el sitio:
+Visite el sitio https://www.virtualbox.org/wiki/Downloads[Virtual Box Downloads] y descargue la versión 7.0.X
 
-https://www.virtualbox.org/wiki/Downloads[Virtual Box Downloads]
+image::in_001.00_DownoadVirtualBox.png[]
 
-* Descargue la última versión e instálela.
+De Click en el botón "Download", ese boton te llevará a la página de descargas.
 
-image::VirtualBox.png[image]
+image::in_001.01_DownoadVirtualBox-DownloadsPage.png[]
+
+ahi, navegar hacia abajo y dar click en "Previous Releases"
+
+image::in_001.02_DownoadVirtualBox-ClickOnPreviousReleases.png[]
+
+Selecciona la version 7.0.X
+
+image::in_001.03_DownoadVirtualBox-SelectVersion7.0.png[]
+
+e instálela en su computadora con las opciones por defecto.
 
 == Importar Máquina Virtual (VM)
 
-Visite el sitio de GCentral para descargar una imagen de máquina virtual que contiene LabVIEW previamente instalado.
-Ve a "Initiatives" y presiona el enlace "Community Training Initiative". Una vez ahí, presiona el enlace "Download the CTI VMN" para bajar la imagen de la máquina virtual.
+Visite https://gcentral.org/cti/[Gcentral/cti] y descargue el archivo OVA, este archivo es la máquina virtual para el CTI (Community Training Initiative)
 
-https://www.gcentral.org[GCentral]
+image::in_001.04_GCentral-CTI.png[]
 
-image::https://github.com/LabVIEWCommunityTraining/GettingStartedLabVIEW1-Spanish/assets/7232195/31aa4276-be32-4ff8-82da-e9752427e0d2[image]
+Ahora vaya a File>>Import Appliance into Virtualbox
 
-Una vez descargado, vaya a Virtual Box, al menú *File >> Import Appliance into Virtualbox*, o bien presione *Ctrl+I*.
+image::in_002.00_ImportAppliance.png[]
 
-image::VirtualBoxImportAppliance.png[image]
+Encuentre el archivo OVA descargado previamente y Presione "Next".
 
-Encuentre el archivo .OVA previamente descargado y presiona el botón Next.
+image::in_003.00_ApplianceToImport.png[]
 
-image::VirtualBoxOVA.png[image]
-
-De ser necesario revise los Settings de la máquina virtual. Se pueden hacer cambios con doble click en lo que se quiera modificar. Por ejemplo, es posible que el número de CPUs sea diferente.
-
-image::ApplianceSettings.png[image]
+image::in_004.00_ApplianceSettings.png[]
 
 Presione el boton de 'Finish' y la imagen .OVA se importará y aparecerá como una nueva máquina virtual.
 
-image::OVAImport.png[image]
+image::in_005.00_ImportingAppliance.png[]
 
+image::in_006.00_Start.png[]
+
+Una vez importada abra la nueva VM (Virtual Machine)
+
+Probablemente necesite dar click en el botón "Show" lleagar a la máquina virtual.
+
+image::in_008_Show.png[]
+
+Nota: Tip, presionandoosla la tecla ctrl derecha liberará el mouse si la Máquina virtual se apodera del cursor.
+
+Ya no se requiere logear como ROOT. El increible equipo detrás de CTI resolvió como evitar la necesidad de tener que usar el usuario ROOT. En vez de eso se utiliza el usuario CTI Student con password = labviewtraining
 ____
 [!Precaución]
 Para poder utilizar el hardware del CTI (Raspberry PI PICO) en ocasiones es necesario instalar el VirtualBox x.x.xx Oracle VirtualBox Extension Pack, el cual se encuentra en la misma pagina de https://www.virtualbox.org/wiki/Downloads[Virtual BOX Downloads], descargue el archivo con extension vbox-extpack
