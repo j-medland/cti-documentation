@@ -972,6 +972,7 @@
 .doc .menuseq,
 .doc .path {
   hyphens: none;
+  font-weight: var(--body-font-weight-bold);
 }
 
 .doc .menuseq i.caret::before {
