@@ -6,4 +6,5 @@
 CAUTION: This version of the documentation is under construction
 
 Version 1.0 is for the OpenSuseCTIBase.ova Virtual Machine
+
 Veriosn 2.0 is for the LabVIEW-CTI-Student-Image-Lubuntu-20250225-1.ova Virtual Machine
