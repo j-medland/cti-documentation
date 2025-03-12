@@ -4,7 +4,7 @@ CAUTION: {wip}
 
 == Install Virtualbox
 
-Go to https://www.virtualbox.org/wiki/Downloads[Virtualbox.org] and download version 7.0.
+Go to https://www.virtualbox.org/wiki/Downloads[Virtualbox.org] and download version 7.0.X
 
 image::in_001.00_DownoadVirtualBox.png[]
 
@@ -16,7 +16,7 @@ there, scroll down to click on "Previous Releases"
 
 image::in_001.02_DownoadVirtualBox-ClickOnPreviousReleases.png[]
 
-Select the 7.0 release
+Select the 7.0.X release
 
 image::in_001.03_DownoadVirtualBox-SelectVersion7.0.png[]
 
@@ -80,7 +80,7 @@ We strongly recommend that you open Firefox before you activate LabVIEW.
 Open up the start-up menu and click on Other>>Post a question on the NI Forums
 This will open the NI Forums.
 
-image::in_014.00_OpenNIwebsite.png
+image::in_014.00_OpenNIwebsite.png[]
 
 If you don't have an account, please create one and log in. If you already have an account, please log in.
 The first time you open Firefox it may take a little longer to refresh.

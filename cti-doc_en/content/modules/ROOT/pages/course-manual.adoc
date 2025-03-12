@@ -187,6 +187,7 @@ Here we can see that no errors were apparent and Identity has a value.
 image::cm_028.00_IDN_ReturnData_Displayed.png[]
 
 But more importantly the LED on the hardware has turned on.
+
 image::cm_029.00_LED_Turns_ON.png[]
 
 == Lesson 2 – For Loops
@@ -256,6 +257,7 @@ execute.)
 (10 times on and 10 times off.)
 
 image::cm_034.00_RightClick-Create-Constant_TerminalN_ForLoop.png[]
+
 image::cm_035.00_ForLoopWired-20N.png[]
 
 In order for the program to `blink` successfully it will need to know
@@ -268,21 +270,19 @@ Register.` Wire the True Constant to the Shift Registers and the DO
 
 
 image::cm_036.00_RightClick-AddShiftRegister-ForLoop.png[]
-image::cm_037.00_ForLoopWiredIncludingShiftRegister.png[]
 
-* For a blinking LED you will need to invert the boolean value after
-every loop. To do this Right-click anywhere to bring up the functions
-palette. Hover over `Boolean` then select the `Not` Boolean. Wire this
-into the shift registers.
+image::cm_037.00_ForLoopWiredIncludingShiftRegister.png[]
 
 * Double click the green wire connecting the True Constant to the SubVI and delete it. Move the True Constant outside the For Loop. Wire the Constant through the For Loop and into the Shift Registers.
 
 image::cm_038.00_DoubleClick-GreenWire-Delete-DragTrueConstant.png[]
+
 image::cm_039.00_DragTrueConstantOutsideForLoop-WireToShiftRegister.png[]
 
 
 •	Remember to wire it back into the SubVI.
-040.00_ForLoopWired-TrueFromShiftRegisterToWriteDO.png[]
+
+image::cm_040.00_ForLoopWired-TrueFromShiftRegisterToWriteDO.png[]
 
 NOTE: If you were to run the program at this point the LED would light up, but would not `blink.`
 
@@ -300,7 +300,7 @@ function. Select and place inside the Loop.
 
 * Create a constant by Right-clicking on the left side of the `Wait`
 function. The `Wait` function executes in milliseconds, therefore to
-slow down the Loop by 5 seconds, write 500.
+have the LED ON for 500ms and Off for 500ms, write 500.
 
 image::cm_042.00_RightClick-FunctionsPalette-Timing-Wait(ms).png[]
 image::cm_043.00_ForLoopWired-Not.png[]
@@ -369,7 +369,8 @@ Loop and wire it up to the Conditional Terminal in the bottom right
 corner. If the Button on the Front Panel is pressed when the program is
 running then the Loop will end and the `blinking` LED will stop.
 
-image::cm_047.00_WhileLoopWired-BooleanSwitchWiredToStopTerminal.png
+image::cm_047.00_WhileLoopWired-BooleanSwitchWiredToStopTerminal.png[]
+
 
 === Exercise – Use DI to stop the loop
 
@@ -915,9 +916,10 @@ appropriate case to handle that event.
 
 image::cm_114.00_EventStructure.png[]
 
-. The event selector label specifies which events cause the displayed
-case to execute.
+
 . The Timeout terminals specifies the number of milliseconds to wait for
 an event before timing out.
+. The event selector label specifies which events cause the displayed
+case to execute.
 . The Event Data Node identifies the data LabVIEW returns when an event
 occurs
