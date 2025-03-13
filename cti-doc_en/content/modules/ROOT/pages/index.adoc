@@ -27,7 +27,7 @@ Visit  https://gcentral.org/cti/[Gcentral/cti] and download the OVA file for the
 
 image::in_001.04_GCentral-CTI.png[]
 
-Now File>>Import Appliance into Virtualbox  
+Now menu:File[Import Appliance into Virtualbox]
 
 image::in_002.00_ImportAppliance.png[]
 
