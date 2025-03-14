@@ -164,12 +164,13 @@ USA and UK Suppliers
 
 Raspberry Pi Pico:
 
-* https://thepihut.com/products/breadboard-kit-for-raspberry-pi-pico[Pi Hut]
+* https://thepihut.com/products/raspberry-pi-pico[Pi Hut]
 * https://www.digikey.com/en/products/detail/raspberry-pi/SC0917/16608257[Digikey]
 
 
 Pico Breadboard Kit:
 
+* https://thepihut.com/products/breadboard-kit-for-raspberry-pi-pico[Pi Hut]
 * https://www.pishop.us/product/pico-breadboard-kit[Pi Shop]
 * https://www.digikey.com/en/products/detail/sb-components-ltd/SKU20843/16836965[Digikey]
 
