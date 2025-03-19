@@ -276,6 +276,16 @@ Analog Test Board:
 * https://thepihut.com/products/analog-test-board[Pi Hut]
 * https://www.waveshare.com/analog-test-board.htm[Waveshare]
 
+China Suppliers
+
+Pico Breadboard Kit:
+
+* https://item.taobao.com/item.htm?_u=j2prh5pl2d01&id=777230738353&pisk=g3bTO_4u3Wh9jEQ9t1rnoTLmdRN3KkfNTO5SoKvic9BdH_hGjnvDcEBPeng0bFxvk99hSdfM5ItfnTsMCGvmkZBFBV0D5t4vh_SUgdAGSjdfAO3cj1vGvjLN-G0DIR8AGTYYE84ur15w7EwuEfk-OZYwMKgXGxvIAC8v1Mjsjg1wuEwx7EcVL1WSjW5EcIOQ9IAmlI6XfBGBwpOshV6XdHOWZATfht9BdCRxlfgXfpOBLQksCn91OvOX1Vi6Ct1Q9IJBhEt1h6_ZI-pI1C3AVxAswhzXNqgfJCKQV19QpibB6B9R1N3rzjR9XL16p8A-3CtABhQ3WYROA_p54gblygAjELdmfWFK0m-6TjUn1MZ9Gpv99LVTkmo2mBRpEWeScmMHTBpu68mq0nAF.&spm=a1z09.2.0.0.6a382e8dVcWth6
+
+Raspberry Pi Pico:
+
+* https://item.taobao.com/item.htm?_u=j2prh5pla744&id=637653493419&pisk=gv___D2PutQEej8xGhVeOeLG5BLfCWzzkjOAZs3ZMFL9cqCNFIu20lAjlp18sdr0jtsCH9xwBK-2lI6yK1u4s1PblsCJBESwQIBFh9mNQZJVLr1lFhuNMZlGxT5-7NrMuqTMoEezUzzrs1YDkl4SkXMgJCR8umK9DFYKUdGa2zzPs6Gw675LzNryCadZDqBvXH3pipdtkqdYOHdXZE39DVnKppvpkVptkedp_CdtWKBxvpdJac39Hcpp9IR6kKBvkW1pKITvHwEmNIZ6M1NOK9yXzvmftpgxkwOLCLC_oqOF-Cs9F1Qsr4VD1h9R6pwyNxA9cOt18PMk1MCWegJSzLOtEmGBqqOBUWNImmm8q1U4SgEs1hdH1HPQOviDXBABtZPIfmx9tCO_OWMIm&spm=a1z09.2.0.0.6a382e8dVcWth6
+
 
 == Support Software
 
