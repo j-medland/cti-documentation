@@ -3,7 +3,7 @@
 This is a multilingual repository to host all of the documentation for the LabVIEW Community Training Initiative.
 
 == Videos
-Playlist: https://youtube.com/playlist?list=PLZ3A_SIOKdQufue8kHC7eMlZdgAD1tzZv&feature=shared
+Playlist: https://youtube.com/playlist?list=PLZ3A_SIOKdQufue8kHC7eMlZdgAD1tzZv
 
 == Building and publishing the site
 
