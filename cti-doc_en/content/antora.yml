@@ -1,9 +1,0 @@
-name: cti-doc
-title: LabVIEW training
-version: v1.0
-nav:
-  - modules/ROOT/nav.adoc
-asciidoc:
-  attributes:
-    wip: This section is under construction
-    nt: Need translation from
