@@ -732,7 +732,7 @@ down so the `Frequency` label is visible.
 
 image::cm_094.00_DragAndExpandBundleByName-Duty-Frequency.png[]
 
-* Right-click at the edge of the bundle and create Constants for `Duty`
+* Right-click at the edge of the bundle and create Controls for `Duty`
 and `Frequency.`
 
 image::cm_095.00_RightClick-Create-Control-DutyFrequency.png[]
